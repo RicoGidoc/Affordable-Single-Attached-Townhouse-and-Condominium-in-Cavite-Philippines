@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Block admin or private folders
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Allow search engines to index images and files
+Allow: /images/
+Allow: /uploads/
+
+# Sitemap location
+Sitemap: https://balay.com/sitemap.xml

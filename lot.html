@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lot Only Properties | RicoHomes.ph</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* BACK BUTTON */
+        .home-float {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+
+            background: linear-gradient(135deg, #28a745, #218838);
+            color: #fff;
+
+            padding: 12px 20px;
+            border-radius: 30px;
+
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+
+            z-index: 1000;
+            transition: 0.3s ease;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-float:hover {
+            transform: scale(1.05);
+        }
+
+        /* HERO */
+        .hero {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.55)),
+                url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1400&auto=format&fit=crop') center/cover;
+            height: 420px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            max-width: 700px;
+            line-height: 1.8;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        /* SECTION TITLE */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .section-title p {
+            color: #555;
+            font-size: 17px;
+        }
+
+        /* LOT GRID */
+        .lot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* CARD */
+        .lot-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+
+            transition: 0.4s ease;
+
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .lot-card:hover {
+            transform: translateY(-8px);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .lot-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .lot-content {
+            padding: 22px;
+        }
+
+        .lot-content h3 {
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .lot-content p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #16a34a;
+            margin: 15px 0;
+        }
+
+        .btn {
+            display: inline-block;
+
+            background: #16a34a;
+            color: #fff;
+
+            padding: 12px 22px;
+            border-radius: 10px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #15803d;
+        }
+
+        /* CONTACT */
+        .contact-section {
+            margin-top: 70px;
+        }
+
+        .contact-box {
+            background: #fff;
+            border-radius: 20px;
+            padding: 45px 30px;
+
+            text-align: center;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-box h2 {
+            margin-bottom: 15px;
+            font-size: 32px;
+            color: #111827;
+        }
+
+        .contact-box p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .contact-box a {
+            color: #16a34a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #111827;
+            color: #fff;
+            margin-top: 70px;
+            padding-top: 50px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px 40px;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 35px;
+        }
+
+        .footer h3,
+        .footer h2 {
+            margin-bottom: 15px;
+        }
+
+        .footer p,
+        .footer a {
+            color: #d1d5db;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #34d399;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            .hero {
+                height: 340px;
+            }
+
+            .hero-content h1 {
+                font-size: 34px;
+            }
+
+            .hero-content p {
+                font-size: 15px;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .contact-box h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BACK BUTTON -->
+    <a href="index.html" class="home-float">
+        🏠 Back to Home
+    </a>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>🌿 LOT ONLY PROPERTIES</h1>
+
+            <p>
+                Discover prime residential and investment lots
+                in Cavite perfect for building your dream home
+                or growing your future investment.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- TITLE -->
+        <div class="section-title">
+
+            <h2>Available Lot Only Properties</h2>
+
+            <p>
+                Affordable and strategically located properties
+                for residential and investment opportunities.
+            </p>
+
+        </div>
+
+        <!-- LOT GRID -->
+        <div class="lot-grid">
+
+            <!-- CARD 1 -->
+            <div class="lot-card">
+
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop"
+                    alt="Lot Property">
+
+                <div class="lot-content">
+
+                    <h3>🏡 Tanza Residential Lot</h3>
+
+                    <p>
+                        Clean title residential lot located near
+                        schools, malls, and major roads.
+                    </p>
+
+                    <p>📍 Tanza, Cavite</p>
+
+                    <div class="price">
+                        ₱8,500 / sqm
+                    </div>
+
+                    <a href="#" class="btn">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="lot-card">
+
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+                    alt="Lot Property">
+
+                <div class="lot-content">
+
+                    <h3>🌳 Dasmariñas Lot</h3>
+
+                    <p>
+                        Ideal for future home construction with
+                        accessible transportation and utilities.
+                    </p>
+
+                    <p>📍 Dasmariñas, Cavite</p>
+
+                    <div class="price">
+                        ₱10,200 / sqm
+                    </div>
+
+                    <a href="#" class="btn">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="lot-card">
+
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop"
+                    alt="Lot Property">
+
+                <div class="lot-content">
+
+                    <h3>🏘️STA ANA MANILA</h3>
+
+                    <p>
+                        Growing community perfect for investment
+                        and long-term property value appreciation.
+                    </p>
+
+                    <p>📍 Trece Martires, Cavite</p>
+
+                    <div class="price">
+                    ₱35 Million Negotiable
+                    Lot Area: 350 SQM
+                    </div>
+
+                    <a href="lotdetails.html" class="btn">
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CONTACT -->
+        <section class="contact-section">
+
+            <div class="contact-box">
+
+                <h2>📞 Contact Your Trusted Property Consultant</h2>
+
+                <p>
+                    Looking for the perfect lot property in Cavite?
+                    Get professional assistance today.
+                </p>
+
+                <p><strong>🏡 Rico G. Gidoc</strong></p>
+
+                <p>
+                    📱 WhatsApp / Smart:
+                    <a href="https://wa.me/639391209602">
+                        0939-120-9602
+                    </a>
+                </p>
+
+                <p>
+                    📧 Email:
+                    <a href="mailto:gidocrealty@gmail.com">
+                        gidocrealty@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    📘 Facebook:
+                    <a href="#">
+                        RicoHomes.ph
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div>
+                <h2>🏡Rico Gidoc</h2>
+
+                <p>
+                    Helping Filipinos find quality homes,
+                    lot properties, and investment opportunities.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <p><a href="index.html">Home</a></p>
+                <p><a href="#">Lot Only</a></p>
+                <p><a href="#">Amenities</a></p>
+                <p><a href="#">Contact</a></p>
+            </div>
+
+            <div>
+                <h3>Contact Info</h3>
+
+                <p>📱 0939-120-9602</p>
+                <p>📧 gidocrealty@gmail.com</p>
+                <p>📍 Cavite, Philippines</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Rico Giodc | Powered by WebSolution Philippines
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #0b1b2b;
+            color: #fff;
+        }
+
+        .details-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section {
+            margin-top: 30px;
+            background: #13263a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 12px;
+            background: #25D366;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .info-section {
+            margin-top: 20px;
+            background: #13263a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact-box p {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background: #ffd700;
+            color: #000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="details-container">
+
+        <!-- Back Button -->
+        <a href="index.html" class="back-home">🏠 Back to Home Page</a>
+
+        <h1>🏡 CONTACT US</h1>
+
+        <!-- Contact Form -->
+        <div class="section" id="contact">
+            <h2>Send a Message</h2>
+
+            <form action="https://formspree.io/f/mblypqvn" method="POST">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
+                    required></textarea>
+
+                <button type="submit">📩 Send Message</button>
+
+            </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="info-section">
+            <h3>📞 Contact Details</h3>
+            <div class="contact-box">
+                <p><strong>Phone:</strong> Smart/WhatsApp: 0939 120 9602</p>
+                <p><strong>Phone:</strong> Globe: 0917 697 9508</p>
+                <p><strong>Facebook:</strong> Rico Gojar Gidoc (Property Consultant)</p>
+                <p><strong>Email:</strong> rgg252010@yahoo.com</p>
+            </div>
+        </div>
+    </div>
+    <a href="https://wa.me/639391209602?text=Hi%20I%20am%20interested%20in%20your%20property%20 %20website%20ad."
+        target="_blank" style="
+            position: fixed;
+            right: 2in;
+            bottom: 2in;
+            display: inline-block;
+            background: #25D366;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            z-index: 9999;
+        ">
+        📲 Chat on WhatsApp
+    </a>
+</body>
+
+</html>

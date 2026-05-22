@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Victoria Ville</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+        }
+
+        /* CONTAINER */
+        .details-container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+        }
+
+        /* BACK BUTTON */
+        .home-btn {
+            display: inline-block;
+            margin: 15px;
+            text-decoration: none;
+            background: green;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        /* MAIN IMAGE */
+        .main-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: flex;
+            gap: 5px;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+
+        .gallery img {
+            height: 70px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* TEXT */
+        h1 {
+            margin-top: 10px;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        /* 📱 MOBILE */
+        @media (max-width: 768px) {
+            .details-container {
+                padding: 15px;
+            }
+
+            .gallery img {
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BACK BUTTON (FIXED POSITION) -->
+    <a href="index.html" class="home-btn">🏠 Back to Home</a>
+
+    <div class="details-container">
+        <h1>Las Brisas Single Attached</h1>
+        <p>
+            Modern community living in Tanza Cavite with accessible
+            locations, schools, malls, and transport hubs.
+        </p>
+
+        <!-- MAIN IMAGE -->
+        <img src="./lasbrisas/1.png" class="main-img" id="mainImage">
+
+        <!-- GALLERY -->
+        <div class="gallery">
+            <img src="./lasbrisas/1.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/2.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/3.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/4.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/5.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/6.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/7.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/8.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/9.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/10.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/11.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/12.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/13.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/14.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/15.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/16.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/17.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/18.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/19.png" onclick="changeImage(this)">
+            <img src="./lasbrisas/20.png" onclick="changeImage(this)">      
+
+        </div>
+
+        <h3>📍 Location:</h3>
+        <p>Brgy Tanauan, Tanza, Cavite</p>
+
+        <h3>📐 Property Details:</h3>
+        <ul>
+            <li>Lot Area: 72 sqm</li>
+            <li>Floor Area: 112.5 sqm</li>
+            <li>2 Storey with Balcony</li>
+            <li>3 Bedrooms</li>
+            <li>Service Area</li>
+            <li>2 Toilet & Bath</li>
+            <li>Living Area, Dining Area, Kitchen, Garage, Balcony</li>
+        </ul>
+
+        <h3>💰 Price:</h3>
+        <p>₱5,083,226.00</p>
+        <p>₱25,000 - Reservation</p>
+
+        <h3>📞 Contact:</h3>
+        <p>Rico Gidoc | 09391209602</p>
+    </div>
+
+    <!-- SCRIPT FOR IMAGE SWITCH -->
+    <script>
+        function changeImage(img) {
+            document.getElementById("mainImage").src = img.src;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oakwood Residences Amenities | PDC Realty</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0b1f3a, #163d6b);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1300px;
+            margin: 60px auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: #0b1f3a;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: #555;
+            font-size: 1rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 70px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 18px;
+            transition: 0.4s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-box h3 {
+            color: #163d6b;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .feature-box ul {
+            padding-left: 20px;
+            color: #555;
+        }
+
+        .feature-box li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 80px;
+        }
+
+        @media(max-width:768px) {
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            .gallery img {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Oakwood Residences Amenities</h1>
+
+        <p>
+            Oakwood Residences in Carmona, Cavite is a peaceful and family-oriented
+            residential community designed for comfortable suburban living with
+            modern lifestyle amenities and relaxing open spaces for the whole family.
+        </p>
+    </header>
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Amenities Gallery</h2>
+
+            <p>
+                Discover the beautifully designed amenities and recreational
+                facilities that make Oakwood Residences an ideal place for modern
+                family living in Carmona, Cavite.
+            </p>
+        </div>
+
+        <div class="gallery">
+            <img src="./amenoakwood/pool.png" alt="Swimming Pool">
+            <img src="./amenoakwood/basket.png" alt="Basketball Court">
+            <img src="./amenoakwood/clubhouse.png" alt="Clubhouse">
+            <img src="./amenoakwood/playground.png" alt="Playground">
+        </div>
+
+        <div class="features">
+
+            <div class="feature-box">
+                <h3>🏊 Swimming Pool</h3>
+
+                <ul>
+                    <li>Adult swimming pool</li>
+                    <li>Kiddie pool</li>
+                    <li>Poolside relaxation area</li>
+                    <li>Resort-inspired ambiance</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h3>🏀 Sports & Recreation</h3>
+
+                <ul>
+                    <li>Basketball court</li>
+                    <li>Open play areas</li>
+                    <li>Jogging and walking paths</li>
+                    <li>Children’s playground</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h3>🏛️ Clubhouse</h3>
+
+                <ul>
+                    <li>Multi-purpose hall</li>
+                    <li>Function rooms</li>
+                    <li>Community activity area</li>
+                    <li>Social gathering spaces</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h3>🌳 Landscaped Open Spaces</h3>
+
+                <ul>
+                    <li>Landscaped parks</li>
+                    <li>Pocket gardens</li>
+                    <li>Wide tree-lined roads</li>
+                    <li>Green open spaces</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h3>🛡️ Security & Infrastructure</h3>
+
+                <ul>
+                    <li>24-hour gated security</li>
+                    <li>Guardhouse with controlled access</li>
+                    <li>Perimeter fencing</li>
+                    <li>Well-lighted streets</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h3>🚗 Nearby Establishments</h3>
+
+                <ul>
+                    <li>Schools and universities</li>
+                    <li>Hospitals and clinics</li>
+                    <li>Shopping centers</li>
+                    <li>Accessible via SLEX and Governor’s Drive</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 PDC WebSolution Philippines | Oakwood Residences Amenities</p>
+    </footer>
+
+</body>
+
+</html>

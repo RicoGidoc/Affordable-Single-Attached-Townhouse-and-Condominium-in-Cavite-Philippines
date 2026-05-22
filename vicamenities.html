@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Victoria Amenities | PDC Realty</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header{
+            background: linear-gradient(135deg, #0b1f3a, #163d6b);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1{
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        header p{
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .container{
+            width: 90%;
+            max-width: 1300px;
+            margin: 60px auto;
+        }
+
+        .section-title{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2{
+            font-size: 2.2rem;
+            color: #0b1f3a;
+            margin-bottom: 10px;
+        }
+
+        .section-title p{
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery img{
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 18px;
+            transition: 0.4s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            cursor: pointer;
+        }
+
+        .gallery img:hover{
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        }
+
+        .features{
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-box{
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .feature-box:hover{
+            transform: translateY(-5px);
+        }
+
+        .feature-box h3{
+            color: #163d6b;
+            margin-bottom: 15px;
+        }
+
+        .feature-box p{
+            color: #555;
+            line-height: 1.6;
+        }
+
+        footer{
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 80px;
+        }
+
+        @media(max-width:768px){
+
+            header h1{
+                font-size: 2.2rem;
+            }
+
+            .gallery img{
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Victoria Amenities</h1>
+
+        <p>
+            Experience modern and family-friendly community living with relaxing
+            amenities designed for comfort, recreation, wellness, and quality
+            lifestyle. Enjoy beautifully planned open spaces and facilities perfect
+            for every member of the family.
+        </p>
+    </header>
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Amenities Gallery</h2>
+            <p>Discover the premium lifestyle and community features.</p>
+        </div>
+
+        <div class="gallery">
+            <img src="./vicamenities/1.png" alt="Victoria Amenities">
+            <img src="./vicamenities/2.png" alt="Victoria Amenities">
+            <img src="./vicamenities/3.png" alt="Victoria Amenities">
+            <img src="./vicamenities/4.png" alt="Victoria Amenities">
+            <img src="./vicamenities/5.png" alt="Victoria Amenities">
+            <img src="./vicamenities/6.png" alt="Victoria Amenities">
+        </div>
+
+        <div class="features">
+
+            <div class="feature-box">
+                <h3>🏊 Swimming Pool</h3>
+
+                <p>
+                    Enjoy refreshing leisure and relaxation with resort-inspired
+                    swimming pool facilities for adults and kids.
+                </p>
+            </div>
+
+            <div class="feature-box">
+                <h3>🌳 Open Spaces</h3>
+
+                <p>
+                    Experience peaceful surroundings with landscaped parks,
+                    greenery, and relaxing outdoor environments.
+                </p>
+            </div>
+
+            <div class="feature-box">
+                <h3>🏀 Recreation Area</h3>
+
+                <p>
+                    Stay active with community recreational spaces designed for
+                    sports, gatherings, and family bonding.
+                </p>
+            </div>
+
+            <div class="feature-box">
+                <h3>🛡️ Secure Community</h3>
+
+                <p>
+                    Live comfortably in a safe and gated environment with security
+                    and accessible community facilities.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 PDC Realty | Victoria Amenities</p>
+    </footer>
+
+</body>
+
+</html>

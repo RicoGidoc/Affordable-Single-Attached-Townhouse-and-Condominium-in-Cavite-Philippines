@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Las Brisas Amenities</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* FLOAT BUTTON */
+        .home-float {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: linear-gradient(135deg, #28a745, #218838);
+            color: #fff;
+
+            padding: 12px 20px;
+            border-radius: 30px;
+
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+
+            z-index: 1000;
+            transition: 0.3s ease;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-float:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #34d058, #28a745);
+        }
+
+        /* MAIN CONTAINER */
+        .amenities-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 90px 20px 40px;
+            text-align: center;
+        }
+
+        /* TITLE */
+        .amenities-container h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        /* DESCRIPTION */
+        .amenities-description {
+            max-width: 850px;
+            margin: auto;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 45px;
+        }
+
+        /* GRID */
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        /* CARD */
+        .amenity-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: 0.4s ease;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .amenity-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* IMAGE */
+        .amenity-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        /* CONTENT */
+        .amenity-content {
+            padding: 20px;
+        }
+
+        .amenity-content h3 {
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .amenity-content p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* CONTACT SECTION */
+        .contact-section {
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        .contact-box {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-box h2 {
+            margin-bottom: 15px;
+            color: #111827;
+            font-size: 30px;
+        }
+
+        .contact-text {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        .contact-details p {
+            margin: 12px 0;
+            font-size: 17px;
+            color: #333;
+        }
+
+        .contact-details a {
+            color: #16a34a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #111827;
+            color: #fff;
+            margin-top: 60px;
+            padding-top: 50px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px 40px;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 35px;
+        }
+
+        .footer-logo h2,
+        .footer-links h3,
+        .footer-contact h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-logo p,
+        .footer-contact p {
+            color: #d1d5db;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-links a {
+            color: #d1d5db;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #34d399;
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 18px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            .amenities-container h1 {
+                font-size: 28px;
+            }
+
+            .amenities-description {
+                font-size: 15px;
+            }
+
+            .amenity-card img {
+                height: 180px;
+            }
+
+            .contact-box {
+                padding: 30px 20px;
+            }
+
+            .contact-box h2 {
+                font-size: 24px;
+            }
+
+            .contact-details p {
+                font-size: 15px;
+            }
+
+            .footer {
+                text-align: center;
+            }
+
+            .footer-links {
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BACK BUTTON -->
+    <a href="index.html" class="home-float">
+        🏠 Back to Home
+    </a>
+
+    <!-- MAIN SECTION -->
+    <div class="amenities-container">
+
+        <h1>✨ AMENITIES – LAS BRISAS</h1>
+
+        <p class="amenities-description">
+            Experience comfortable and modern living at
+            <strong>Las Brisas, Cavite</strong>.
+            Enjoy lifestyle-focused amenities designed for relaxation,
+            recreation, wellness, and convenience for you and your family.
+        </p>
+
+        <!-- AMENITIES GRID -->
+        <div class="amenities-grid">
+
+            <!-- CARD 1 -->
+            <div class="amenity-card">
+                <img src="./lasbrisasamenities/pool.png" alt="Swimming Pool">
+
+                <div class="amenity-content">
+                    <h3>🏊 Swimming Pool</h3>
+
+                    <p>
+                        Relax and unwind in the modern swimming pool area
+                        perfect for leisure and family bonding.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="amenity-card">
+                <img src="./lasbrisasamenities/gate.png" alt="Gate">
+
+                <div class="amenity-content">
+                    <h3>🚪 Main Entrance Gate</h3>
+
+                    <p>
+                        Secure and beautifully designed entrance gate
+                        providing safety and convenience for residents.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="amenity-card">
+                <img src="./lasbrisasamenities/play.png" alt="Playground">
+
+                <div class="amenity-content">
+                    <h3>🛝 Children's Playground</h3>
+
+                    <p>
+                        Safe and enjoyable outdoor spaces designed
+                        for kids and family activities.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="amenity-card">
+                <img src="./lasbrisasamenities/club.png" alt="Clubhouse">
+
+                <div class="amenity-content">
+                    <h3>☕ Clubhouse</h3>
+
+                    <p>
+                        A stylish and relaxing lounge space for residents,
+                        guests, and casual gatherings.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="amenity-card">
+                <img src="./lasbrisasamenities/basket.png" alt="Basketball Court">
+
+                <div class="amenity-content">
+                    <h3>🏀 Basketball Court</h3>
+
+                    <p>
+                        Enjoy fun and active living with a modern basketball
+                        court perfect for fitness and bonding moments.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section">
+
+            <div class="contact-box">
+
+                <h2>📞 Contact Your Trusted Property Consultant</h2>
+
+                <p class="contact-text">
+                    Looking for your dream home in Cavite?
+                    Get professional assistance for property viewing,
+                    reservation, financing, and inquiries.
+                </p>
+
+                <div class="contact-details">
+
+                    <p><strong>🏡 Rico G. Gidoc</strong></p>
+
+                    <p>
+                        📱 WhatsApp / Smart:
+                        <a href="https://wa.me/639391209602">
+                            0939-120-9602
+                        </a>
+                    </p>
+
+                    <p>
+                        📧 Email:
+                        <a href="mailto:gidocrealty@gmail.com">
+                            gidocrealty@gmail.com
+                        </a>
+                    </p>
+
+                    <p>
+                        📘 Facebook:
+                        <a href="#">
+                            RicoHomes.ph
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <h2>🏡 RicoHomes.ph</h2>
+
+                <p>
+                    Your trusted partner in finding quality homes
+                    and investment properties in Cavite and nearby areas.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+
+                <p>📱 0939-120-9602</p>
+                <p>📧 gidocrealty@gmail.com</p>
+                <p>📍 Cavite, Philippines</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Rico Gidoc | Powered by WebSolution Philippines
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
