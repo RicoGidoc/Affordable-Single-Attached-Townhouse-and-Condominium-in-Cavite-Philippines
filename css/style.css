@@ -463,8 +463,8 @@
 
   .chat-btn {
       position: fixed;
-      right: 20px;
-      bottom: 20px;
+      right: 10px;
+      bottom: 10px;
       background: #25D366;
       color: white;
       padding: 16px 22px;
