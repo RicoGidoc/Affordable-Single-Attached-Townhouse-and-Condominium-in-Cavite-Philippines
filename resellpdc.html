@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resale Property Details | Rico Gidoc</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* BACK BUTTON */
+        .home-float {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            background: linear-gradient(135deg, #28a745, #218838);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            z-index: 1000;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-float:hover {
+            transform: scale(1.05);
+        }
+
+        /* HERO */
+        .hero {
+            width: 100%;
+            height: 420px;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.55)),
+                url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1400&auto=format&fit=crop') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* CENTER CONTAINER */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* CARD */
+        .property-info {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .property-info h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .location {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .price {
+            font-size: 38px;
+            color: #16a34a;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .description {
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* FEATURES */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .feature-box {
+            background: #f9fafb;
+            padding: 18px;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .feature-box h3 {
+            color: #16a34a;
+        }
+
+        /* GALLERY */
+        .gallery {
+            margin-top: 30px;
+        }
+
+        .gallery h2 {
+            margin-bottom: 15px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 14px;
+            transition: 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #111827;
+            color: #fff;
+            margin-top: 70px;
+            padding-top: 50px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 35px;
+        }
+
+        /* ✅ QUICK LINKS FIX */
+        .footer-container a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer-container a:hover {
+            color: #34d399;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #9ca3af;
+        }
+
+        /* MOBILE */
+        @media (max-width: 900px) {
+            .hero {
+                height: 320px;
+            }
+
+            .property-info h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BACK BUTTON -->
+    <a href="resell.html" class="home-float">🏠 Back to Listings</a>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Resale Property Details</h1>
+    </section>
+
+    <!-- MAIN -->
+    <div class="container">
+
+        <div class="property-info">
+
+            <h1>🏡 2 Storey House and Lot</h1>
+
+            <p class="location">
+                📍 Cita Italia, Molino Blvd.,Bacoor, Cavite <br>
+                🚶 2 minutes to Palmridge School (inside the subdivision)<br>
+                🏥 3 minutes to Bacoor Doctors Medical Center<br>
+                🏛️ 4 minutes to Bacoor City Hall<br>
+                ☕ 8 minutes to Roma Café<br>
+                🛍️ 14 minutes to SM Bacoor<br>
+                🛣️ Excellent Accessibility<br>
+                ✔ Easy access to Daang Hari Road<br>
+                ✔ Near CAVITEX<br>
+                ✔ Connected to major road networks<br>
+                
+                🌟 Ideal for families looking for comfort, convenience, and a secure community.<br>
+            </p>
+
+            <div class="price">₱9,700,000</div>
+
+            <p class="description">
+                This resale property offers a comfortable and modern lifestyle in a peaceful Cavite community.<br>
+                Perfect for families looking for security, accessibility, and convenience.<br>
+            🔥 TARA NA! IKAW NA LANG ANG HINIHINTAY NITO!<br>
+            </p>
+
+            <!-- FEATURES -->
+            <div class="features">
+
+                <div class="feature-box">
+                    <h3>🛏 3 Spacious Bedrooms</h3>
+                </div>
+
+                <div class="feature-box">
+                    <h3>🛁 3 Toilet & Bath</h3>
+                </div>
+
+                <div class="feature-box">
+                    <h3>🚗 4 Covered Garage</h3>
+                </div>
+
+                <div class="feature-box">
+                    <h3>📐 143sqm Lot Area</h3>
+                </div>
+                
+
+            </div>
+
+            <!-- GALLERY -->
+            <div class="gallery">
+                <h2>📸 Property Gallery</h2>
+
+                <div class="gallery-grid">
+                    <img src="./pdc/1.png">
+                    <img src="./pdc/2.png">
+                    <img src="./pdc/3.png">
+                    <img src="./pdc/4.png">
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div>
+                <h2>🏡PDC Realty</h2>
+                <p>Helping Filipinos find quality homes and investments.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="resell.html">Resale Properties</a></p>
+                <p><a href="#">Contact</a></p>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>📱 0939-120-9602</p>
+                <p>📧 gidocrealty@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Rico Gidoc WebSolution Philippines
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
