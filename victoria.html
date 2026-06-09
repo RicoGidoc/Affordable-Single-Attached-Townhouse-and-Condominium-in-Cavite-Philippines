@@ -71,7 +71,75 @@
     </script>
 
     <style>
-    <link rel="stylesheet" href="./css/style.css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+        }
+
+        /* CONTAINER */
+        .details-container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+        }
+
+        /* BACK BUTTON */
+        .home-btn {
+            display: inline-block;
+            margin: 15px;
+            text-decoration: none;
+            background: green;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        /* MAIN IMAGE */
+        .main-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: flex;
+            gap: 5px;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+
+        .gallery img {
+            height: 70px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* TEXT */
+        h1 {
+            margin-top: 10px;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        /* 📱 MOBILE */
+        @media (max-width: 768px) {
+            .details-container {
+                padding: 15px;
+            }
+
+            .gallery img {
+                height: 60px;
+            }
+        }
     </style>
 </head>
 
