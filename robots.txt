@@ -1,4 +1,5 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://www.cavitehouseandlot.com/sitemap.xml
+Affordable-Single-Attached-Townhouse-and-Condominium-in-Cavite-Philippines/
+  index.html
+  about.html
+  sitemap.xml
+  robots.txt
