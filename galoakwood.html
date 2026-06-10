@@ -56,20 +56,27 @@ content="https://www.cavitehouseandlot.com/oakwood/1.jpg">
 <!-- Schema Markup -->
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"Residence",
- "name":"Oakwood Residences",
- "url":"https://www.cavitehouseandlot.com/oakwood.html",
- "image":"https://www.cavitehouseandlot.com/oakwood/1.jpg",
- "description":"Single attached house for sale in Oakwood Residences Carmona Cavite.",
- "address":{
-   "@type":"PostalAddress",
-   "addressLocality":"Carmona",
-   "addressRegion":"Cavite",
-   "addressCountry":"PH"
- }
+  "@context": "https://schema.org",
+  "@type": "Residence",
+  "name": "Oakwood Residences Single Attached House and Lot",
+  "description": "4-bedroom single attached house and lot for sale in Oakwood Residences, Carmona, Cavite. Features 100 sqm lot area, 104 sqm floor area, 2 toilet and bath, service area, and provision for carport.",
+  "url": "https://www.cavitehouseandlot.com/oakwood.html",
+  "image": "https://www.cavitehouseandlot.com/oakwood/1.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Carmona",
+    "addressRegion": "Cavite",
+    "addressCountry": "PH"
+  },
+  "floorSize": {
+    "@type": "QuantitativeValue",
+    "value": "104",
+    "unitCode": "MTK"
+  }
 }
 </script>
+
+ 
 
 <style>
 
@@ -143,13 +150,6 @@ content="https://www.cavitehouseandlot.com/oakwood/1.jpg">
             }
         }
     </style>
- <script>
-function changeImage(img) {
-    const mainImage = document.getElementById("mainImage");
-    mainImage.src = img.src;
-    mainImage.alt = img.alt;
-}
-</script>
 </head>
 
 <body>
