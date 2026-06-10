@@ -114,11 +114,11 @@
   }
 
   .hero h1 {
-      font-size: 65px;
-      line-height: 1.1;
-      max-width: 800px;
-      margin-bottom: 25px;
-  }
+    font-size: clamp(28px, 6vw, 65px);
+    line-height: 1.1;
+    max-width: 800px;
+    margin-bottom: 25px;
+}
 
   .hero p {
       max-width: 760px;
