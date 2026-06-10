@@ -4,486 +4,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resale Properties | RicoHomes.ph</title>
+
+    <title>Resell Bungalow House in City Homes Dasma Cavite</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            color: #333;
-        }
-
-        /* BACK BUTTON */
-        .home-float {
-            position: fixed;
-            top: 15px;
-            left: 15px;
-
-            background: linear-gradient(135deg, #28a745, #218838);
-            color: #fff;
-
-            padding: 12px 20px;
-            border-radius: 30px;
-
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 14px;
-
-            z-index: 1000;
-            transition: 0.3s ease;
-
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .home-float:hover {
-            transform: scale(1.05);
-        }
-
-        /* HERO */
         .hero {
-            background:
-                linear-gradient(rgba(0, 0, 0, 0.55),
-                    rgba(0, 0, 0, 0.55)),
-                url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1400&auto=format&fit=crop') center/cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    background: #fff;
+}
 
-            height: 420px;
+.hero img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            text-align: center;
-            color: #fff;
-            padding: 20px;
-        }
-
-        .hero-content h1 {
-            font-size: 52px;
-            margin-bottom: 15px;
-        }
-
-        .hero-content p {
-            font-size: 18px;
-            line-height: 1.8;
-            max-width: 700px;
-        }
-
-        /* MAIN */
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 60px 20px;
-        }
-
-        /* TITLE */
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-title h2 {
-            font-size: 38px;
-            margin-bottom: 10px;
-            color: #111827;
-        }
-
-        .section-title p {
-            color: #555;
-            font-size: 17px;
-        }
-
-        /* GRID */
-        .property-grid {
+        .details {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 35px 0;
         }
 
-        /* CARD */
-        .property-card {
-            background: #fff;
-            border-radius: 20px;
-            overflow: hidden;
-
-            transition: 0.4s ease;
-
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        .box {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #eee;
         }
 
-        .property-card:hover {
-            transform: translateY(-8px);
-
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .property-card img {
-            width: 100%;
-            height: 230px;
-            object-fit: cover;
-        }
-
-        .property-content {
-            padding: 22px;
-        }
-
-        .property-content h3 {
-            margin-bottom: 12px;
-            color: #111827;
-        }
-
-        .property-content p {
-            color: #666;
-            line-height: 1.7;
+        .box h3 {
+            color: #c0392b;
             margin-bottom: 10px;
-            font-size: 15px;
         }
 
-        .price {
-            font-size: 26px;
-            color: #16a34a;
-            font-weight: bold;
-            margin: 15px 0;
+        .features {
+            margin-top: 20px;
+        }
+
+        .features ul {
+            padding-left: 20px;
+        }
+
+        .features li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background: #fff5f5;
+            padding: 25px;
+            border-left: 5px solid #c0392b;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        .cta {
+            margin-top: 40px;
+            text-align: center;
         }
 
         .btn {
             display: inline-block;
-
-            background: #16a34a;
+            background: #c0392b;
             color: #fff;
-
-            padding: 12px 24px;
-            border-radius: 10px;
-
+            padding: 15px 35px;
             text-decoration: none;
-            font-weight: bold;
-
-            transition: 0.3s ease;
+            border-radius: 50px;
+            font-size: 18px;
+            transition: 0.3s;
         }
 
         .btn:hover {
-            background: #15803d;
+            background: #962d22;
         }
 
-        /* CONTACT */
-        .contact-section {
-            margin-top: 70px;
-        }
-
-        .contact-box {
-            background: #fff;
-            border-radius: 20px;
-
-            padding: 45px 30px;
-
+        footer {
             text-align: center;
-
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-        }
-
-        .contact-box h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-            color: #111827;
-        }
-
-        .contact-box p {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 10px;
-        }
-
-        .contact-box a {
-            color: #16a34a;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* FOOTER */
-        .footer {
-            background: #111827;
+            padding: 25px;
+            background: #222;
             color: #fff;
-            margin-top: 70px;
-            padding-top: 50px;
+            margin-top: 40px;
         }
 
-        .footer-container {
-            max-width: 1200px;
-            margin: auto;
-
-            padding: 0 20px 40px;
-
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-            gap: 35px;
-        }
-
-        .footer h2,
-        .footer h3 {
-            margin-bottom: 15px;
-        }
-
-        .footer p,
-        .footer a {
-            color: #d1d5db;
-            line-height: 1.8;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            color: #34d399;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding: 18px;
-
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-
-            color: #9ca3af;
-            font-size: 14px;
-        }
-
-        /* MOBILE */
-        @media (max-width: 600px) {
-
-            .hero {
-                height: 340px;
-            }
-
-            .hero-content h1 {
-                font-size: 34px;
-            }
-
-            .hero-content p {
-                font-size: 15px;
-            }
-
-            .section-title h2 {
+        @media(max-width:768px) {
+            h1 {
                 font-size: 28px;
             }
 
-            .contact-box h2 {
-                font-size: 24px;
+            .hero img {
+                height: 320px;
+            }
+
+            .content {
+                padding: 20px;
             }
         }
     </style>
+
 </head>
 
 <body>
 
-    <!-- BACK BUTTON -->
-    <a href="index.html" class="home-float">
-        🏠 Back to Home
-    </a>
-
-    <!-- HERO -->
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <h1>🏡 RESALE PROPERTIES</h1>
-
-            <p>
-                Explore affordable and ready-for-occupancy resale homes
-                in Cavite perfect for families and property investors.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- MAIN CONTENT -->
     <div class="container">
 
-        <!-- TITLE -->
-        <div class="section-title">
+        <div class="hero">
+            <img src="./resell/1.jpg" alt="Resell Bungalow House">
+            <img src="./resell/2.jpg" alt="Resell Bungalow House">
+            <img src="./resell/3.jpg" alt="Resell Bungalow House">
+            <img src="./resell/5.jpg" alt="Resell Bungalow House">
+            <img src="./resell/6.jpg" alt="Resell Bungalow House">
+            <img src="./resell/7.jpg" alt="Resell Bungalow House">
+            <img src="./resell/8.jpg" alt="Resell Bungalow House">
+            <img src="./resell/9.jpg" alt="Resell Bungalow House">
+            <img src="./resell/10.jpg" alt="Resell Bungalow House">
+            <img src="./resell/11.jpg" alt="Resell Bungalow House">
+        </div>
 
-            <h2>Available Resale Properties</h2>
+        <div class="content">
 
-            <p>
-                Discover quality pre-owned homes in strategic locations
-                with excellent value and investment potential.
+            <span class="tag">RESALE PROPERTY</span>
+
+            <h1>Affordable Resell Bungalow House in Dasmariñas Cavite</h1>
+
+            <p class="location">
+                📍 Location: City Homes Dasma, Cavite
             </p>
 
-        </div>
+            <div class="price">
+                Total Contract Price: ₱1.5 Million
+            </div>
 
-        <!-- PROPERTY GRID -->
-        <div class="property-grid">
+            <div class="details">
 
-            <!-- CARD 1 -->
-            <div class="property-card">
-
-                <img src="./resell house/cityhomesdasma/1.jpg"
-                    alt="Resale House">
-
-                <div class="property-content">
-
-                    <h3>🏠Bungalow House and Corner Lot</h3>
-
-                    <p>
-                        Puidi na house with spacious living area,
-                        Street parking space, and secure community.
-                    </p>
-
-                    <p>📍 CityHomes Dasma, Cavite</p>
-
-                    <div class="price">
-                        ₱1,500,000
-                    </div>
-
-                    <a href="reselldetails.html" class="btn">
-                        View Details
-                    </a>
-
+                <div class="box">
+                    <h3>Lot Area</h3>
+                    <p>57 sqm to 70 sqm</p>
                 </div>
 
-            </div>
-<!-- CARD 2 -->
-            <div class="property-card">
+                <div class="box">
+                    <h3>House Type</h3>
+                    <p>Bungalow House</p>
+                </div>
 
-                <img src="./pdc/1.png"
-                    alt="PDC House">
+                <div class="box">
+                    <h3>Bedrooms</h3>
+                    <p>2 Bedrooms</p>
+                </div>
 
-                <div class="property-content">
-
-                    <h3>🌿 Family House and Lot</h3>
-
-                    <p>
-                        Ready-for-occupancy home ideal for growing families
-                        near schools, malls, and transport hubs.
-                    </p>
-
-                    <p>📍 Bacoor, Cavite</p>
-
-                    <div class="price">
-                        ₱9,700,000
-                    </div>
-
-                    <a href="resellpdc.html" class="btn">
-                        View Details
-                    </a>
-
+                <div class="box">
+                    <h3>Property Feature</h3>
+                    <p>Corner Lot Available</p>
                 </div>
 
             </div>
 
-            <!-- CARD 3 -->
-            <!-- <div class="property-card">
+            <div class="features">
+                <h2>House Features</h2>
 
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop"
-                    alt="House for Sale">
+                <ul>
+                    <li>✔ 2 Bedrooms</li>
+                    <li>✔ Living Area</li>
+                    <li>✔ Dining Area</li>
+                    <li>✔ Kitchen Area</li>
+                    <li>✔ Toilet and Bath</li>
+                    <li>✔ Spacious Corner Lot</li>
+                    <li>✔ Clean Title</li>
+                    <li>✔ Updated Tax DEcs</li>
+                </ul>
+            </div>
 
-                <div class="property-content">
+            <div class="highlight">
+                <h2>Why Buy This Property?</h2>
 
-                    <h3>🏘️ Elegant Townhouse</h3>
+                <p>
+                    This affordable bungalow house is located in a convenient area of Dasmariñas, Cavite.
+                    Ideal for families, first-time buyers, or investors looking for a property with good
+                    resale potential.
+                </p>
 
-                    <p>
-                        Stylish resale townhouse with modern interior
-                        design and peaceful neighborhood environment.
-                    </p>
+                <br>
 
-                    <p>📍 General Trias, Cavite</p>
+                <p>
+                    ✅ 1 Ride to Walter Dasma<br>
+                    ✅ Near Dasma University Belt<br>
+                    ✅ Accessible to public transportation<br>
+                    ✅ Good investment for future resale
+                </p>
+            </div>
 
-                    <div class="price">
-                        ₱2,850,000
-                    </div>
-
-                    <a href="reselldetails.html" class="btn">
-                        View Details
-                    </a>
-
-                </div>
-
-            </div> -->
+            <div class="cta">
+                <a href="https://www.cavitehouseandlot.com/" class="btn">
+                    INQUIRE NOW
+                </a>
+            </div>
 
         </div>
-
-        <!-- CONTACT -->
-        <section class="contact-section">
-
-            <div class="contact-box">
-
-                <h2>📞 Contact Your Trusted Property Consultant</h2>
-
-                <p>
-                    Need assistance finding the right resale property?
-                    Get professional guidance for viewing, financing,
-                    and property acquisition.
-                </p>
-
-                <p><strong>🏡 Rico G. Gidoc</strong></p>
-
-                <p>
-                    📱 WhatsApp / Smart:
-                    <a href="https://wa.me/639391209602">
-                        0939-120-9602
-                    </a>
-                </p>
-
-                <p>
-                    📧 Email:
-                    <a href="mailto:gidocrealty@gmail.com">
-                        gidocrealty@gmail.com
-                    </a>
-                </p>
-
-                <p>
-                    📘 Facebook:
-                    <a href="#">
-                        Rico Gojar Gidoc (Property Consultant)
-                    </a>
-                </p>
-
-            </div>
-
-        </section>
 
     </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <div class="footer-container">
-
-            <div>
-                <h2>🏡Rico Gojar Gidoc (Property Consultant)</h2>
-
-                <p>
-                    Helping Filipinos find quality homes,
-                    resale properties, and investment opportunities.
-                </p>
-            </div>
-
-            <div>
-                <h3>Quick Links</h3>
-
-                <p><a href="index.html">Home</a></p>
-                <p><a href="#">Resale Properties</a></p>
-                <p><a href="#">Amenities</a></p>
-                <p><a href="#">Contact</a></p>
-            </div>
-
-            <div>
-                <h3>Contact Info</h3>
-
-                <p>📱 0939-120-9602</p>
-                <p>📧 gidocrealty@gmail.com</p>
-                <p>📍 Cavite, Philippines</p>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            © 2026 Rico Gidoc | Powered by WebSolution Philippines
-        </div>
-
+    <footer>
+        Rico G. Gidoc | Property Consultant <br>
+        PDC Realty Corp. | Cavite House and Lot
     </footer>
 
 </body>
