@@ -143,6 +143,13 @@ content="https://www.cavitehouseandlot.com/oakwood/1.jpg">
             }
         }
     </style>
+ <script>
+function changeImage(img) {
+    const mainImage = document.getElementById("mainImage");
+    mainImage.src = img.src;
+    mainImage.alt = img.alt;
+}
+</script>
 </head>
 
 <body>
@@ -156,7 +163,7 @@ content="https://www.cavitehouseandlot.com/oakwood/1.jpg">
         <p>
 Oakwood Residences in Carmona Cavite offers modern single attached homes with spacious layouts, quality construction, and convenient access to schools, malls, hospitals, and major transport routes.
      </p>
-        <img src="./oakwood/1.jpg"
+     <img src="./oakwood/1.jpg"
      class="main-img"
      id="mainImage"
      alt="Oakwood Residences Single Attached House in Carmona Cavite"
