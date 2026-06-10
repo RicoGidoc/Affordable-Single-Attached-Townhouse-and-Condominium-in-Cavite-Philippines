@@ -503,8 +503,8 @@
 
     /* Hero */
     .hero h1 {
-        font-size: 42px;
-    }
+    font-size: clamp(24px, 5vw, 42px);
+  }
 
     .search-box {
         flex-direction: column;
