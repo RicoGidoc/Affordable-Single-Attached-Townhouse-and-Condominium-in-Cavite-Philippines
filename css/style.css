@@ -129,6 +129,13 @@
       margin-bottom: 35px;
   }
 
+/* HERO TEXT */
+.hero h1,
+.hero p,
+.hero .featured {
+    color: #fff;
+}
+
   .search-box {
       background: white;
       padding: 25px;
