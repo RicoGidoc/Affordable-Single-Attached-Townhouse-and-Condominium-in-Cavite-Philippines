@@ -80,9 +80,13 @@ content="https://ricogidoc.github.io/Affordable-Single-Attached-Townhouse-and-Co
 
         /* Image */
         .main-img {
-            width: 60%;
-            border-radius: 10px;
-        }
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
 
         /* Gallery */
         .gallery {
@@ -105,6 +109,43 @@ content="https://ricogidoc.github.io/Affordable-Single-Attached-Townhouse-and-Co
         ul {
             padding-left: 18px;
         }
+
+
+        @media (max-width: 768px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+
+    .gallery img {
+        height: 80px;
+    }
+
+    .home-btn {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
    </style>
 
     <script type="application/ld+json">
