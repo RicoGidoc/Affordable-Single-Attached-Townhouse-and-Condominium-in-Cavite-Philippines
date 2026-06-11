@@ -505,11 +505,10 @@
     .hero h1 {
         font-size: 30px;
         line-height: 1.3;
-    }
-     .hero-content {
-        padding: 15px;
-    }
- 
+    
+ .hero-content {
+    padding: 15px 5px;
+}
 
     .search-box {
         flex-direction: column;
