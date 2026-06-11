@@ -506,7 +506,9 @@
         font-size: 30px;
         line-height: 1.3;
     }
-
+     .hero-content {
+        padding: 15px;
+    }
  
 
     .search-box {
