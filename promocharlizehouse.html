@@ -41,18 +41,26 @@
         }
 
         /* Image */
-        .main-img {
-            width: 60%;
-            border-radius: 10px;
-        }
+       .main-img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+        img {
+    max-width: 100%;
+    height: auto;
+}
 
         /* Gallery */
-        .gallery {
-            display: flex;
-            gap: 5px;
-            overflow-x: auto;
-            margin-top: 10px;
-        }
+       .gallery img {
+    height: 80px;
+    width: auto;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
 
         .gallery img {
             height: 70px;
@@ -67,9 +75,43 @@
         ul {
             padding-left: 18px;
         }
+
+
+        @media (max-width: 768px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    h2 {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .home-btn {
+        display: block;
+        text-align: center;
+    }
+}
     </style>
 
-    <script type="application/ld+json">
+
+<script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"RealEstateAgent",
@@ -79,6 +121,23 @@
   "email":"gidocrealty@gmail.com"
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Residence",
+  "name":"Charlize Model House",
+  "description":"House and Lot for Sale in Dasmariñas Cavite with 3 bedrooms, balcony, and carport.",
+  "url":"https://ricogidoc.github.io/Affordable-Single-Attached-Townhouse-and-Condominium-in-Cavite-Philippines/promocharlizehouse.html",
+  "image":"https://ricogidoc.github.io/Affordable-Single-Attached-Townhouse-and-Condominium-in-Cavite-Philippines/charlize/modelhouse2.png",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Dasmariñas",
+    "addressRegion":"Cavite",
+    "addressCountry":"PH"
+  }
+}
+</script>    
 
 </head>
 
