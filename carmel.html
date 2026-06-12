@@ -90,10 +90,12 @@ href="https://ricogidoc.github.io/Affordable-Single-Attached-Townhouse-and-Condo
     }
 
     .main-img {
-        width: 100%;
-        max-width: 350px;
-        border-radius: 10px;
-    }
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
     .main-text {
         flex: 1;
@@ -171,6 +173,21 @@ href="https://ricogidoc.github.io/Affordable-Single-Attached-Townhouse-and-Condo
         padding: 12px 18px;
         font-size: 14px;
     }
+}
+
+ @media (max-width: 768px) {
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-img {
+        width: 100%;
+        max-width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
 }
 </style>
 
