@@ -42,9 +42,10 @@
   }
 
   .logo {
-      font-size: 22px;
-      font-weight: 800;
-      color: #0f172a;
+    font-size: 10px;
+    font-weight: 800;
+    color: red;
+}
   }
 .logo h1 .balay{
     font-size:0.55em;
