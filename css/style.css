@@ -52,10 +52,10 @@
 }
 .tagline{
     font-size:14px;
-    color:#888;
-    margin-top:-10px;
-    letter-spacing:2px;
-    font-weight:400;
+    color:#555;
+    margin-top:-8px;
+    letter-spacing:1px;
+    font-weight:500;
 }
   .nav-links {
       display: flex;
