@@ -528,7 +528,9 @@
      .logo{
     font-size:24px;
 }
-
+.balay{
+    font-size:0.85em;
+}
     .search-box {
         flex-direction: column;
     }
