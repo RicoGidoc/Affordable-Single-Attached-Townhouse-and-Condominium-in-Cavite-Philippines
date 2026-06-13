@@ -258,22 +258,35 @@ content="https://ricogidoc.github.io/Affordable-Single-Attached-Townhouse-and-Co
     color: #555;
     line-height: 1.8;
 }
-        .footer {
+      .footer {
     background: linear-gradient(135deg, #111827, #1f2937);
     color: #fff;
-    margin-top: 70px;
-    padding-top: 50px;
+    margin-top: 100px;
+    padding-top: 60px;
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: #34d399;
+    border-radius: 50px;
 }
 
         .footer-container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 0 20px 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px 50px;
 
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 35px;
-        }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+}
 
         .footer h3,
 .footer h2 {
