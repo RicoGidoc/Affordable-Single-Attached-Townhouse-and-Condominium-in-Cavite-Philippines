@@ -47,10 +47,11 @@
       color: #0f172a;
   }
 .tagline{
-    font-size:14px;
+    font-size:12px;
     color:#888;
-    margin-top:3px;
-    letter-spacing:1px;
+    margin-top:-15px;
+    letter-spacing:2px;
+    font-weight:400;
 }
 
   .nav-links {
