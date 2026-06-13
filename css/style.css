@@ -558,10 +558,10 @@
 ========================= */
 @media (max-width: 768px) {
 
-    .logo {
-        font-size: 18px;
-        line-height: 1.2;
-        max-width: 140px;
+   .logo {
+        font-size: 16px;
+        line-height: 1.1;
+        max-width: 120px;
     }
 
     .hero h1 {
