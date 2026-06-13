@@ -46,6 +46,12 @@
       font-weight: 800;
       color: #0f172a;
   }
+.tagline{
+    font-size:14px;
+    color:#666;
+    margin-top:3px;
+    letter-spacing:1px;
+}
 
   .nav-links {
       display: flex;
