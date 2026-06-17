@@ -274,7 +274,13 @@ href="https://www.balaypromo.com/promo.html">
 .hero-right img{
     width:100%;
     border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    object-fit:cover;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+    transition:.3s ease;
+}
+
+.hero-right img:hover{
+    transform:translateY(-5px);
 }
 
 @media(max-width:768px){
