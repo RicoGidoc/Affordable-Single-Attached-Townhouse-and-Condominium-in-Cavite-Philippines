@@ -121,21 +121,31 @@ content="https://www.balaypromo.com/kat5/k1.png">
     }
 }
 
-        /* Gallery */
-        .gallery {
-            display: flex;
-            gap: 5px;
-            overflow-x: auto;
+            /* Gallery */
+     .gallery {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding-bottom: 8px;
+}
+
+       .gallery img {
+    width: 90px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+        /* Text */
+        h1 {
             margin-top: 10px;
         }
-
-        .gallery img {
-    height: 90px;
-    width: auto;
-    border-radius: 5px;
-    cursor: pointer;
-    flex-shrink: 0;
-}
         /* Text */
         h1 {
             margin-top: 10px;
