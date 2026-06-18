@@ -331,6 +331,14 @@ href="https://www.balaypromo.com/promo.html">
 .hero-right{
     margin-top:20px;
 }
+.footer-container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.footer-logo img{
+    width:100px;
+}
 }
 
 .hero-badge{
@@ -422,18 +430,31 @@ href="https://www.balaypromo.com/promo.html">
     .footer{
     background:#0f172a;
     color:#fff;
-    text-align:center;
     padding:50px 20px;
     margin-top:50px;
 }
 
-.footer h3{
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.footer-logo img{
+    width:120px;
+    height:auto;
+    border-radius:10px;
+}
+
+.footer-content h3{
     color:#fbbf24;
-    margin-bottom:15px;
+    margin-bottom:10px;
     font-size:28px;
 }
 
-.footer p{
+.footer-content p{
     margin:8px 0;
     opacity:.9;
 }
