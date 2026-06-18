@@ -106,6 +106,20 @@ href="https://www.balaypromo.com/promo.html">
     margin: 15px auto 10px;
 }
 
+.content-card{
+    position:relative;
+}
+
+.content-card:not(:last-child)::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#fbbf24;
+    border-radius:10px;
+    margin:40px auto 0;
+}
+
 @media (max-width: 768px) {
     .card img {
         width: 100%;
