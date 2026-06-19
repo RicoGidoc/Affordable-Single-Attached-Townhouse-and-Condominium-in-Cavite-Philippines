@@ -6,10 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+```
 <title>Property Insights | Balay Promo</title>
 
 <meta name="description"
     content="Explore real estate insights, homeownership guides, property investment tips, and the latest Cavite real estate updates.">
+
+<meta name="robots" content="index, follow">
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -27,20 +30,20 @@
     }
 
     .top-nav {
-    padding: 15px 20px;
-    background: #ffffff;
-    border-bottom: 1px solid #e2e8f0;
-}
+        padding: 15px 20px;
+        background: #ffffff;
+        border-bottom: 1px solid #e2e8f0;
+    }
 
-.top-nav a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 600;
-}
+    .top-nav a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 600;
+    }
 
-.top-nav a:hover {
-    text-decoration: underline;
-}
+    .top-nav a:hover {
+        text-decoration: underline;
+    }
 
     .hero {
         background: linear-gradient(135deg, #0f172a, #1e293b);
@@ -67,48 +70,11 @@
         font-size: 18px;
         opacity: .9;
     }
-.featured {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 0 20px;
-}
 
-.featured-content {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,.08);
-    text-align: center;
-}
-
-.featured-content span {
-    color: #2563eb;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.featured-content h2 {
-    margin: 15px 0;
-    color: #0f172a;
-}
-
-.featured-content p {
-    color: #64748b;
-    max-width: 700px;
-    margin: 0 auto 20px;
-}
-
-.featured-content a {
-    color: #2563eb;
-    font-weight: 600;
-    text-decoration: none;
-}
     .articles {
         max-width: 1200px;
         margin: 60px auto;
         padding: 0 20px;
-
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 30px;
@@ -123,7 +89,8 @@
     }
 
     .card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0,0,0,.15);
     }
 
     .card img {
@@ -142,17 +109,26 @@
         font-weight: bold;
         letter-spacing: 1px;
     }
+
     .post-date {
-    color: #94a3b8;
-    font-size: 13px;
-    margin-top: 8px;
-    margin-bottom: 10px;
-}
+        color: #94a3b8;
+        font-size: 13px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
 
     .card h2 {
         font-size: 24px;
-        color: #0f172a;
         margin: 15px 0;
+    }
+
+    .card-title {
+        color: #0f172a;
+        text-decoration: none;
+    }
+
+    .card-title:hover {
+        color: #2563eb;
     }
 
     .card p {
@@ -162,32 +138,20 @@
     }
 
     .card a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
-    background: #2563eb;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: .3s;
-}
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 18px;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: .3s;
+    }
 
-.card a:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
-}
-
-    .card-title {
-    color: #0f172a;
-    text-decoration: none;
-}
-
-.card-title:hover {
-    color: #2563eb;
-}
-
-
+    .card a:hover {
+        background: #1d4ed8;
+    }
 
     footer {
         text-align: center;
@@ -195,58 +159,66 @@
         color: #64748b;
     }
 
-    @media(max-width:768px){
+    @media(max-width:768px) {
 
-        .hero h1{
-            font-size:36px;
+        .hero h1 {
+            font-size: 36px;
         }
 
     }
 </style>
-    
+```
 
 </head>
 
 <body>
+
+```
 <div class="top-nav">
     <a href="index.html">← Back to Home</a>
 </div>
+
 <section class="hero">
 
     <span>PROPERTY INSIGHTS</span>
 
     <h1>Property Insights & Real Estate Guides</h1>
 
-<p>
-    Helping homebuyers and investors make smarter decisions through
-    expert insights, market updates, homeownership guides, and
-    real estate investment knowledge.
-</p>
+    <p>
+        Helping homebuyers and investors make smarter decisions through
+        expert insights, market updates, homeownership guides,
+        and real estate investment knowledge.
+    </p>
 
 </section>
 
+<section class="articles">
 
-    <section class="featured">
+    <div class="card">
 
-    <div class="featured-content">
+        <img src="images/cavite-update.jpg" alt="Latest Real Estate Update">
 
-        <span>FEATURED ARTICLE</span>
+        <div class="card-content">
 
-        <h2>Latest Real Estate Update</h2>
+            <span class="category">LATEST UPDATE</span>
+            <div class="post-date">June 2026</div>
 
-        <p>
-            Stay updated with the latest property launches,
-            housing promos, infrastructure developments,
-            and investment opportunities in Cavite.
-        </p>
+            <h2>
+                <a href="latest-real-estate-news.html" class="card-title">
+                    Latest Real Estate Update
+                </a>
+            </h2>
 
-        <a href="latest-real-estate-news.html">
-            Read Latest Update →
-        </a>
+            <p>
+                Stay informed about property launches, housing promos,
+                market trends, and investment opportunities in Cavite.
+            </p>
 
-    </div>
+            <a href="latest-real-estate-news.html">
+                Read Article →
+            </a>
 
-</section>
+        </div>
 
     </div>
 
@@ -257,11 +229,12 @@
         <div class="card-content">
 
             <span class="category">HOMEOWNERSHIP</span>
+            <div class="post-date">June 2026</div>
 
             <h2>
-         <a href="why-homeownership-matters.html" class="card-title">
-        Why Owning a Home Should Be Your Priority
-         </a>
+                <a href="why-homeownership-matters.html" class="card-title">
+                    Why Owning a Home Should Be Your Priority
+                </a>
             </h2>
 
             <p>
@@ -284,8 +257,13 @@
         <div class="card-content">
 
             <span class="category">BUYING GUIDE</span>
+            <div class="post-date">June 2026</div>
 
-            <h2>Buying vs Renting: Which Builds Your Future?</h2>
+            <h2>
+                <a href="buying-vs-renting.html" class="card-title">
+                    Buying vs Renting: Which Builds Your Future?
+                </a>
+            </h2>
 
             <p>
                 Compare the benefits of homeownership and renting
@@ -307,11 +285,12 @@
         <div class="card-content">
 
             <span class="category">INVESTMENT</span>
+            <div class="post-date">June 2026</div>
 
             <h2>
-    <a href="property-appreciation.html" class="card-title">
-        How Property Appreciation Creates Wealth
-    </a>
+                <a href="property-appreciation.html" class="card-title">
+                    How Property Appreciation Creates Wealth
+                </a>
             </h2>
 
             <p>
@@ -334,16 +313,17 @@
         <div class="card-content">
 
             <span class="category">PASSIVE INCOME</span>
+            <div class="post-date">June 2026</div>
 
             <h2>
-    <a href="passive-income.html" class="card-title">
-        Creating Passive Income Through Real Estate
-    </a>
+                <a href="passive-income.html" class="card-title">
+                    Creating Passive Income Through Real Estate
+                </a>
             </h2>
 
             <p>
-                Explore how rental properties can generate
-                recurring income while building long-term wealth.
+                Explore how rental properties can generate recurring
+                income while building long-term wealth.
             </p>
 
             <a href="passive-income.html">
@@ -355,11 +335,11 @@
     </div>
 
 </section>
-<section class="articles">
 
 <footer>
     © 2026 Property Insights | Balay Promo
 </footer>
+```
 
 </body>
 
