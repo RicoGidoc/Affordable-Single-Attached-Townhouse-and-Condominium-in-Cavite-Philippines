@@ -143,6 +143,64 @@ content="https://www.balaypromo.com/images/preview.jpg">
 }
 
 }
+
+.featured-blog {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.blog-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.blog-content img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.blog-content span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.blog-content h2 {
+    margin: 15px 0;
+    color: #0f172a;
+}
+
+.blog-content p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.blog-content a {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.blog-content a:hover {
+    background: #1d4ed8;
+}
+
+@media(max-width:768px) {
+    .blog-content {
+        grid-template-columns: 1fr;
+    }
+}
 </style>  
   
 </head>
@@ -564,7 +622,33 @@ content="https://www.balaypromo.com/images/preview.jpg">
 
     </section>
 
+<section class="featured-blog">
 
+    <div class="blog-content">
+
+        <img src="images/cavite-update.jpg"
+             alt="Latest Real Estate Update">
+
+        <div>
+
+            <span>LATEST PROPERTY INSIGHT</span>
+
+            <h2>Latest Real Estate Update</h2>
+
+            <p>
+                Stay informed about property launches, housing promos,
+                market trends, and investment opportunities in Cavite.
+            </p>
+
+            <a href="blog.html">
+                Read More →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
     
 <!-- FOOTER -->
 
