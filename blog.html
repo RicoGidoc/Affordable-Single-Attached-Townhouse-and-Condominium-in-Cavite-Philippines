@@ -1,271 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cavite Real Estate Update | Property Insights</title>
+```
+<title>Cavite Real Estate Update | Property Insights</title>
 
-    <meta name="description"
-        content="Stay updated with the latest real estate news, property launches, housing promos, and investment opportunities in Cavite and nearby areas.">
+<meta name="description"
+    content="Stay updated with the latest real estate news, property launches, housing promos, and investment opportunities in Cavite and nearby areas.">
 
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta name="robots" content="index, follow">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f8fafc;
-            color: #334155;
-            line-height: 1.8;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        .hero {
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        background: #f8fafc;
+        color: #334155;
+        line-height: 1.8;
+    }
 
-        .hero span {
-            color: #60a5fa;
-            font-size: 14px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
+    /* HERO */
+
+    .hero {
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .hero-content {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .hero span {
+        color: #60a5fa;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        margin: 20px 0;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        max-width: 700px;
+        margin: auto;
+        opacity: .9;
+        font-size: 18px;
+    }
+
+    /* FEATURED SECTION */
+
+    .featured-post {
+        max-width: 1200px;
+        margin: 60px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .featured-image img {
+        width: 100%;
+        border-radius: 15px;
+        display: block;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+    }
+
+    .featured-content span {
+        color: #2563eb;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .featured-content h2 {
+        font-size: 2rem;
+        color: #0f172a;
+        margin: 20px 0;
+    }
+
+    .featured-content p {
+        color: #64748b;
+        margin-bottom: 20px;
+    }
+
+    .featured-content a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    /* ARTICLE CONTAINER */
+
+    .container {
+        max-width: 900px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+    }
+
+    .date {
+        color: #64748b;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .container h2 {
+        color: #0f172a;
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+
+    .container p {
+        margin-bottom: 20px;
+    }
+
+    .highlight {
+        background: #eff6ff;
+        border-left: 4px solid #2563eb;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 30px 0;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-top: 30px;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        transition: .3s;
+    }
+
+    .back-btn:hover {
+        background: #1d4ed8;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px 20px;
+        color: #64748b;
+    }
+
+    @media (max-width: 768px) {
 
         .hero h1 {
-            font-size: 48px;
-            margin: 20px 0;
+            font-size: 36px;
         }
 
-        .hero p {
-            max-width: 700px;
-            margin: auto;
-            opacity: .9;
+        .featured-post {
+            grid-template-columns: 1fr;
         }
 
         .container {
-            max-width: 900px;
-            margin: 50px auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+            padding: 25px;
         }
-
-        .date {
-            color: #64748b;
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
-
-        h2 {
-            margin-top: 35px;
-            margin-bottom: 15px;
-            color: #0f172a;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        .highlight {
-            background: #eff6ff;
-            border-left: 4px solid #2563eb;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-
-        .back-btn {
-            display: inline-block;
-            margin-top: 40px;
-            text-decoration: none;
-            background: #2563eb;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-        }
-
-        .back-btn:hover {
-            background: #1d4ed8;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #64748b;
-        }
-        /* ....................... */
-
-
-        .featured-post {
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.featured-image img {
-    width: 100%;
-    border-radius: 15px;
-    display: block;
-}
-
-.featured-content span {
-    color: #2563eb;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.featured-content h2 {
-    margin: 20px 0;
-    color: #0f172a;
-    font-size: 2rem;
-}
-
-.featured-content p {
-    color: #64748b;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.featured-content a {
-    text-decoration: none;
-    color: #2563eb;
-    font-weight: 600;
-}
-
-@media(max-width:768px){
-    .featured-post{
-        grid-template-columns:1fr;
     }
-}
-    </style>
+</style>
+```
+
 </head>
 
 <body>
 
-    <section class="hero">
+```
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
         <span>PROPERTY INSIGHTS</span>
 
         <h1>Cavite Real Estate Update</h1>
 
         <p>
-            Stay informed about the latest property trends, project launches,
-            housing promos, and investment opportunities in Cavite.
-        </p>
-    </section>
-
-
-<section class="featured-post">
-
-    <div class="featured-image">
-        <img src="images/homeownership.jpg" alt="Why Homeownership Matters">
-    </div>
-
-    <div class="featured-content">
-        <span>FEATURED ARTICLE</span>
-
-        <h2>
-            Why Owning a Home Should Be Your Priority
-        </h2>
-
-        <p>
-            Homeownership is more than having a place to live. It is about
-            building equity, creating financial security, and investing in
-            your family's future. Learn why many successful investors start
-            with owning a home.
+            Stay informed about the latest property trends,
+            project launches, housing promos, and investment
+            opportunities in Cavite.
         </p>
 
-        <a href="why-homeownership-matters.html">
-            Read Full Article →
-        </a>
     </div>
 
 </section>
 
-    
+<!-- MONTHLY HIGHLIGHT -->
 
-    <div class="container">
+<section class="featured-post">
 
-        <div class="date">
-            Published: June 2026
-        </div>
+    <div class="featured-image">
+        <img src="images/cavite-update.jpg"
+            alt="Cavite Property Market Update">
+    </div>
 
-        <p>
-            The Cavite real estate market continues to attract homebuyers and
-            investors due to ongoing infrastructure improvements, growing
-            communities, and increasing demand for affordable housing.
-        </p>
+    <div class="featured-content">
 
-        <div class="highlight">
-            📢 Monthly Highlight:
-            Several housing developments in Bacoor, Imus, Tanza, Naic,
-            General Trias, and Dasmariñas continue to offer attractive
-            promotions for qualified buyers.
-        </div>
+        <span>MONTHLY HIGHLIGHT</span>
 
-        <h2>New Housing Opportunities</h2>
+        <h2>
+            Cavite Property Market Continues to Grow
+        </h2>
 
         <p>
-            Developers are introducing new phases and additional inventory
-            to meet the increasing demand for affordable homes near Metro Manila.
+            New housing developments, infrastructure projects,
+            and attractive payment options continue to make
+            Cavite one of the most desirable locations for
+            homebuyers and investors near Metro Manila.
         </p>
 
-        <h2>Infrastructure Developments</h2>
-
-        <p>
-            Road improvements, transportation projects, and commercial
-            developments continue to enhance accessibility throughout Cavite,
-            helping increase property values over time.
-        </p>
-
-        <h2>Investment Insights</h2>
-
-        <p>
-            Real estate remains one of the most reliable long-term investments.
-            Property appreciation and rental opportunities continue to make
-            Cavite an attractive location for investors.
-        </p>
-
-        <h2>Current Property Promos</h2>
-
-        <p>
-            Various projects are offering flexible payment terms, discounts,
-            and special incentives for buyers. Contact us for the latest
-            project-specific promotions.
-        </p>
-
-        <h2>Looking Ahead</h2>
-
-        <p>
-            As Cavite continues to grow, homebuyers and investors should
-            monitor emerging communities and infrastructure projects that
-            may contribute to future property appreciation.
-        </p>
-
-        <a href="blog.html" class="back-btn">
-            ← Back to Property Insights
+        <a href="#latest-update">
+            Read Market Update →
         </a>
 
     </div>
 
-    <footer>
-        © 2026 Property Insights | Cavite House and Lot
-    </footer>
+</section>
+
+<!-- ARTICLE CONTENT -->
+
+<div class="container" id="latest-update">
+
+    <div class="date">
+        Published: June 2026
+    </div>
+
+    <p>
+        The Cavite real estate market continues to attract
+        homebuyers and investors because of improving
+        infrastructure, growing communities, and affordable
+        housing opportunities.
+    </p>
+
+    <div class="highlight">
+        📢 Monthly Highlight:
+        Several housing developments in Bacoor, Imus,
+        General Trias, Tanza, Naic, and Dasmariñas
+        continue to offer attractive promos and flexible
+        payment terms for qualified buyers.
+    </div>
+
+    <h2>New Housing Opportunities</h2>
+
+    <p>
+        Developers continue to launch new phases and housing
+        projects to meet the increasing demand for affordable
+        homes near Metro Manila.
+    </p>
+
+    <h2>Infrastructure Developments</h2>
+
+    <p>
+        Ongoing road improvements and transportation projects
+        are helping improve accessibility throughout Cavite,
+        contributing to property value growth.
+    </p>
+
+    <h2>Investment Insights</h2>
+
+    <p>
+        Real estate remains one of the most reliable long-term
+        investments. Property appreciation and rental income
+        opportunities continue to attract both first-time
+        buyers and seasoned investors.
+    </p>
+
+    <h2>Current Property Promos</h2>
+
+    <p>
+        Various residential communities are offering discounts,
+        flexible payment terms, and special incentives for
+        qualified buyers. Contact us for current promotions.
+    </p>
+
+    <h2>Looking Ahead</h2>
+
+    <p>
+        As Cavite continues to grow, buyers and investors
+        should keep an eye on emerging communities and
+        infrastructure projects that may drive future
+        appreciation.
+    </p>
+
+    <a href="blog.html" class="back-btn">
+        ← Back to Property Insights
+    </a>
+
+</div>
+
+<footer>
+    © 2026 Property Insights | Cavite House and Lot
+</footer>
+```
 
 </body>
 
 </html>
+
