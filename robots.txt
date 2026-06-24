@@ -1,7 +1,14 @@
 # PDC BalayPromo
+
 # https://www.balaypromo.com
 
 User-agent: *
 Allow: /
+
+# Allow large image previews in Google Search
+
+max-image-preview:large
+
+# Sitemap
 
 Sitemap: https://www.balaypromo.com/sitemap.xml
