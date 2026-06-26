@@ -55,92 +55,93 @@
     <meta name="twitter:image" content="https://www.balaypromo.com/phirstend/1.jpg">
     <meta name="twitter:image:alt" content="Phirst Park Homes General Trias Cavite">
 
-    
-
-
-
-    <!-- Organization / Real Estate Agent -->
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"Organization",
-      "@id":"https://www.balaypromo.com/#organization",
-      "url": "https://www.balaypromo.com/",
-      "logo": "https://www.balaypromo.com/images/balaypromo.png",
-      "image": "https://www.balaypromo.com/phirstend/1.jpg",
-      "telephone": "+63 939 120 9602",
-      "email": "info@balaypromo.com",
-      "priceRange": "₱₱",
-"description": "BalayPromo.com specializes in affordable houses and lots for sale in General Trias, Cavite and nearby areas.",
-"brand": {
-  "@type": "Brand",
-  "name": "BalayPromo.com"
-},
-      "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": "Cavite, Philippines"
-      },
-
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "General Trias",
-        "addressRegion": "Cavite",
-        "addressCountry": "PH"
-      }
-      
-    }
-    </script>
-
-
-    <script type="application/ld+json">
-    {
-     "@context":"https://schema.org",
-     "@type":"Organization",
-     "name":"BalayPromo.com",
-     "url":"https://www.balaypromo.com/",
-     "logo":"https://www.balaypromo.com/images/balaypromo.png"
-    }
-    </script>
-    
-    <!-- Property Listing -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "RealEstateListing",
-      "name": "Phirst Park Homes General Trias Cavite",
-       "category": "House and Lot",
-      "description": "Affordable house and lot for sale in General Trias, Cavite. Available in End Unit and Mid Unit with flexible payment options.",
-      "url": "https://www.balaypromo.com/phirst.html",
-      "mainEntityOfPage": "https://www.balaypromo.com/phirst.html",
-
-        
-      "image": [
-        "https://www.balaypromo.com/phirstend/1.jpg",
-        "https://www.balaypromo.com/phirstend/2.jpg",
-        "https://www.balaypromo.com/phirstend/3.jpg",
-        "https://www.balaypromo.com/phirstmid/1.jpg",
-        "https://www.balaypromo.com/phirstmid/2.jpg",
-        "https://www.balaypromo.com/phirstmid/3.jpg"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Brgy. Buenavista",
-        "addressLocality": "General Trias",
-        "addressRegion": "Cavite",
-        "addressCountry": "PH"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "PHP",
-        "price": "4494365.18",
-        "availability": "https://schema.org/InStock",
-        "url": "https://www.balaypromo.com/phirst.html"
-      },
-      "seller": {
-  "@id": "https://www.balaypromo.com/#realestateagent"
+    ```html
+<!-- Real Estate Agent -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "@id": "https://www.balaypromo.com/#realestateagent",
+  "name": "BalayPromo.com",
+  "url": "https://www.balaypromo.com/",
+  "logo": "https://www.balaypromo.com/images/balaypromo.png",
+  "image": "https://www.balaypromo.com/phirstend/1.jpg",
+  "telephone": "+63 939 120 9602",
+  "email": "info@balaypromo.com",
+  "description": "BalayPromo.com specializes in affordable houses and lots for sale in General Trias, Cavite and nearby areas.",
+  "priceRange": "₱₱",
+  "brand": {
+    "@type": "Brand",
+    "name": "BalayPromo.com"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Cavite, Philippines"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "General Trias",
+    "addressRegion": "Cavite",
+    "addressCountry": "PH"
+  }
 }
-    }
-    </script>
+</script>
+
+<!-- Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.balaypromo.com/#organization",
+  "name": "BalayPromo.com",
+  "url": "https://www.balaypromo.com/",
+  "logo": "https://www.balaypromo.com/images/balaypromo.png",
+  "image": "https://www.balaypromo.com/images/balaypromo.png",
+  "email": "info@balaypromo.com",
+  "telephone": "+63 939 120 9602"
+}
+</script>
+
+<!-- Property Listing -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateListing",
+  "name": "Phirst Park Homes General Trias Cavite",
+  "category": "House and Lot",
+  "description": "Affordable house and lot for sale in General Trias, Cavite. Available in End Unit and Mid Unit with flexible payment options.",
+  "url": "https://www.balaypromo.com/phirst.html",
+  "mainEntityOfPage": "https://www.balaypromo.com/phirst.html",
+  "image": [
+    "https://www.balaypromo.com/phirstend/1.jpg",
+    "https://www.balaypromo.com/phirstend/2.jpg",
+    "https://www.balaypromo.com/phirstend/3.jpg",
+    "https://www.balaypromo.com/phirstmid/1.jpg",
+    "https://www.balaypromo.com/phirstmid/2.jpg",
+    "https://www.balaypromo.com/phirstmid/3.jpg"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Brgy. Buenavista",
+    "addressLocality": "General Trias",
+    "addressRegion": "Cavite",
+    "addressCountry": "PH"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "PHP",
+    "price": "4494365.18",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.balaypromo.com/phirst.html"
+  },
+  "seller": {
+    "@id": "https://www.balaypromo.com/#realestateagent"
+  }
+}
+</script>
+```
+
+    
 
     <style>
         body {
