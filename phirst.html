@@ -246,6 +246,49 @@
     }
 
 }
+/* ................ */
+
+
+        .property-content{
+    display:flex;
+    gap:35px;
+    align-items:flex-start;
+    margin-top:20px;
+}
+
+.image-column{
+    flex:1;
+}
+
+.info-column{
+    flex:1;
+}
+
+.info-column h3{
+    color:#0B6B3A;
+    margin:20px 0 8px;
+    border-bottom:2px solid #e5e7eb;
+    padding-bottom:6px;
+}
+
+.info-column p,
+.info-column li{
+    color:#444;
+    line-height:1.7;
+}
+
+@media(max-width:768px){
+
+.property-content{
+    flex-direction:column;
+}
+
+.image-column,
+.info-column{
+    width:100%;
+}
+
+}
 </style>
 </head>
 
