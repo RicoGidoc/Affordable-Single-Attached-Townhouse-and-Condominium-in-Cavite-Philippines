@@ -263,26 +263,9 @@ ul{
 }
 
 /* WhatsApp Button */
-.whatsapp-btn{
-    position:fixed;
-    right:20px;
-    bottom:80px;
-    width:60px;
-    height:60px;
-    background:#25D366;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    box-shadow:0 6px 15px rgba(0,0,0,.3);
-    z-index:9999;
-}
 
-.chat-btn:hover{
-    background:#1ebe5d;
-    color:#fff;
-    transform:scale(1.05);
-}
+
+    
 
 /* Mobile */
 @media (max-width:768px){
@@ -322,23 +305,51 @@ ul{
         text-align:center;
     }
 
-    .whatsapp-btn{
-        width:55px;
-        height:55px;
-        right:15px;
-        bottom:75px;
-    }
-
-    .whatsapp-btn img{
-        width:28px;
-        height:28px;
-    }
-
     .promo-price{
         font-size:38px;
     }
 
 }
+/* ............. */
+.whatsapp-btn{
+    position:fixed;
+    right:15px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#25D366;
+    border-radius:50%;
+    z-index:99999;
+}
+
+.whatsapp-btn img{
+    width:34px;
+    height:34px;
+}
+
+@media (max-width:768px){
+
+.whatsapp-btn{
+    right:15px;
+    bottom:20px;
+    width:55px;
+    height:55px;
+    z-index:99999;
+}
+
+}
+    
+
+/* ............... */
+
+
+    
+
+
+    
 
 </style>
    
