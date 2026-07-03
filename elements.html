@@ -274,6 +274,81 @@
 
         }
 /* ...............h1............... */
+
+
+.property-info{
+    margin-top:40px;
+}
+
+.info-card,
+.price-card,
+.contact-card{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.info-card h3,
+.price-card h3,
+.contact-card h3{
+    color:#198754;
+    margin-bottom:15px;
+    font-size:1.5rem;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:12px;
+    margin-top:15px;
+}
+
+.feature-grid span{
+    background:#eef7ff;
+    border:1px solid #d9e9ff;
+    padding:12px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.price{
+    font-size:2.8rem;
+    color:#dc3545;
+    font-weight:800;
+    margin:15px 0;
+}
+
+.misc{
+    color:#198754;
+    font-weight:700;
+}
+
+.reserve{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.call-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:14px 28px;
+    background:#198754;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.call-btn:hover{
+    background:#146c43;
+}
+
+
+
+        
 .hero-title{
     text-align:center;
     padding:25px 15px 35px;
@@ -426,31 +501,60 @@
         </div>
 
 
-        <h3>📍 Location:</h3>
-        <p>Pilar Village, Las Pinas</p>
+        <div class="property-info">
 
-        <h3>📐 Property Details:</h3>
-        <ul>
-            <li>TownHouse</li>
-            <li>Lot Area: 80sqm</li>
-            <li>Floor Area: 192.50sqm</li>
-            <li>3 Storey</li>
-            <li>4 Bedrooms</li>
-            <li>5 Toilet & Bath</li>
-            <li>Living Area, Dining Area, Kitchen, Garage</li>
-        </ul>
-
-        <h3>💰 Price:</h3>
-        <p>₱10,500,000.00 (Misc. Included)</p>
-        <p>₱50,000 - Reservation</p>
-
-        <h3>📞 Contact:</h3>
-        <p>Rico Gidoc | 09391209602</p>
-    
-    
+    <div class="info-card">
+        <h3>📍 Prime Location</h3>
+        <p><strong>Pilar Village, Las Piñas City</strong><br>
+        A highly accessible community near Alabang, shopping malls, schools, hospitals, and major transport routes.</p>
     </div>
 
+    <div class="info-card">
+        <h3>🏡 Property Details</h3>
+
+        <div class="feature-grid">
+            <span>🏠 3-Storey Townhouse</span>
+            <span>📐 80 sqm Lot Area</span>
+            <span>📏 192.50 sqm Floor Area</span>
+            <span>🛏️ 4 Spacious Bedrooms</span>
+            <span>🚿 5 Toilet & Bath</span>
+            <span>🚗 Private Garage</span>
+            <span>🍽️ Living & Dining Area</span>
+            <span>👨‍🍳 Modern Kitchen</span>
+        </div>
     </div>
+
+    <div class="price-card">
+        <h3>💰 Ready for Occupancy</h3>
+
+        <div class="price">
+            ₱10,500,000
+        </div>
+
+        <p class="misc">
+            ✔ Miscellaneous Fees Included
+        </p>
+
+        <p class="reserve">
+            Reserve Your Unit for Only <strong>₱50,000</strong><br>
+            <small>Reservation Fee is Deductible from the Down Payment.</small>
+        </p>
+    </div>
+
+    <div class="contact-card">
+        <h3>📞 Schedule a Site Viewing</h3>
+
+        <p>
+            <strong>Rico Gidoc</strong><br>
+            Property Consultant
+        </p>
+
+        <a href="tel:09391209602" class="call-btn">
+            📱 Call 0939-120-9602
+        </a>
+    </div>
+
+</div>
 
 
     <!-- SCRIPT FOR IMAGE SWITCH -->
