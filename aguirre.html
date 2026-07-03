@@ -46,6 +46,9 @@
 
 <meta property="og:site_name" content="BalayPromo.com">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 <!-- Twitter -->
 
 <meta name="twitter:card" content="summary_large_image">
@@ -313,8 +316,8 @@ ul{
 /* ............. */
 .whatsapp-btn{
     position:fixed;
-    right:15px;
-    bottom:20px;
+    right:18px;
+    bottom:18px;
     width:60px;
     height:60px;
     background:#25D366;
@@ -324,23 +327,31 @@ ul{
     justify-content:center;
     align-items:center;
     text-decoration:none;
-    font-size:30px;
-    box-shadow:0 6px 15px rgba(0,0,0,.3);
-    z-index:99999;
+    z-index:999999;
+    box-shadow:0 5px 15px rgba(0,0,0,.35);
+}
+
+.whatsapp-btn i{
+    font-size:34px;
 }
 
 .whatsapp-btn:hover{
-    background:#1ebe5d;
+    background:#1EBE5D;
 }
 
-@media(max-width:768px){
-    .whatsapp-btn{
-        width:55px;
-        height:55px;
-        right:15px;
-        bottom:20px;
-        font-size:28px;
-    }
+@media (max-width:768px){
+
+.whatsapp-btn{
+    width:58px;
+    height:58px;
+    right:15px;
+    bottom:15px;
+}
+
+.whatsapp-btn i{
+    font-size:32px;
+}
+
 }
 /* ............... */
 
@@ -356,11 +367,13 @@ ul{
 </head>
 
 <body>
-    <a href="https://api.whatsapp.com/send?phone=639391209602&text=Hello%20I%20am%20interested%20in%20the%20property%20you%20posted.%20Thanks!"
+   <a href="https://api.whatsapp.com/send?phone=639391209602&text=Hello%20I%20am%20interested%20in%20the%20property%20you%20posted.%20Thanks!"
    target="_blank"
    rel="noopener"
    class="whatsapp-btn">
-   💬
+
+    <i class="fab fa-whatsapp"></i>
+
 </a>
 <div class="container">
 
