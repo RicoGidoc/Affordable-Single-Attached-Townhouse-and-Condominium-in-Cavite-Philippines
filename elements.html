@@ -140,153 +140,169 @@
     }
     </script>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-        }
 
-        /* CONTAINER */
-        .details-container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-        }
+<style>
 
-        /* BACK BUTTON */
-        .home-btn {
-            display: inline-block;
-            margin: 15px;
-            text-decoration: none;
-            background: green;
-            color: #fff;
-            padding: 8px 12px;
-            border-radius: 6px;
-        }
+/* =========================
+   GLOBAL
+========================= */
 
-        /* MAIN IMAGE */
-        /* MAIN IMAGE */
-        .main-img {
-            display: block;
-            width: 50%;
-            max-width: 700px;
-            height: auto;
-            margin: 20px auto;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, .18);
-            transition: .3s;
-            cursor: zoom-in;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .main-img:hover {
-            transform: scale(1.02);
-        }
+html,
+body{
+    overflow-x:hidden;
+}
 
-        /* GALLERY */
-        .gallery {
-            display: flex;
-            gap: 5px;
-            overflow-x: auto;
-            margin-top: 10px;
-        }
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
 
-        .gallery img {
-            height: 70px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+/* =========================
+   BUTTON
+========================= */
 
-        .gallery img:hover {
-            transform: scale(1.1);
-        }
-
-        /* TEXT */
-        h1 {
-            margin-top: 10px;
-        }
-
-        ul {
-            padding-left: 18px;
-        }
-
-/* ............. */
-.whatsapp-btn{
-    position:fixed;
-    right:max(15px, env(safe-area-inset-right));
-    bottom:max(15px, env(safe-area-inset-bottom));
-    width:58px;
-    height:58px;
-    background:#25D366;
+.home-btn{
+    display:inline-block;
+    margin:20px;
+    padding:10px 16px;
+    background:#198754;
     color:#fff;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     text-decoration:none;
-    box-shadow:0 6px 15px rgba(0,0,0,.35);
-    z-index:999999;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
 }
 
-.whatsapp-btn i{
-    font-size:34px;
-}
-.whatsapp-btn:hover{
-    background:#1EBE5D;
+.home-btn:hover{
+    background:#146c43;
 }
 
-@media (max-width:768px){
+/* =========================
+   CONTAINER
+========================= */
 
-.whatsapp-btn{
-    width:58px;
-    height:58px;
-    right:15px;
-    bottom:15px;
-}
-
-.whatsapp-btn i{
-    font-size:32px;
-}
-
-}
-/* ............... */
-
-
-
-        
-
-        @media (max-width:768px) {
-
-            .details-container {
-                padding: 15px;
-            }
-
-            .main-img {
-                width: 100%;
-                margin: 15px auto;
-            }
-
-            .gallery img {
-                height: 65px;
-            }
-
-        }
-/* ...............h1............... */
-
-
+.details-container,
 .property-info{
-    margin-top:40px;
+    max-width:1100px;
+    margin:40px auto;
+    padding:35px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
+
+/* =========================
+   HERO
+========================= */
+
+.hero-title{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero-badge{
+    display:inline-block;
+    padding:10px 20px;
+    background:#198754;
+    color:#fff;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.hero-title h1{
+    margin:20px 0 10px;
+    font-size:3rem;
+    color:#0f172a;
+    font-weight:800;
+}
+
+.hero-subtitle{
+    font-size:1.3rem;
+    color:#198754;
+    font-weight:600;
+}
+
+.details-container h2{
+    text-align:center;
+    color:#0d6efd;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.details-container p{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    font-size:1.1rem;
+    color:#555;
+    line-height:1.8;
+}
+
+/* =========================
+   MAIN IMAGE
+========================= */
+
+.main-img{
+    width:100%;
+    max-width:900px;
+    display:block;
+    margin:40px auto 20px;
+    border-radius:15px;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.main-img:hover{
+    transform:scale(1.02);
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin:25px auto;
+}
+
+.gallery img{
+    width:110px;
+    height:80px;
+    object-fit:cover;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+
+/* =========================
+   PROPERTY CARDS
+========================= */
 
 .info-card,
 .price-card,
 .contact-card{
-    background:#fff;
-    padding:25px;
-    border-radius:12px;
     margin-bottom:25px;
+    padding:25px;
+    background:#fff;
+    border-radius:12px;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
@@ -306,12 +322,16 @@
 }
 
 .feature-grid span{
+    padding:12px;
     background:#eef7ff;
     border:1px solid #d9e9ff;
-    padding:12px;
     border-radius:8px;
     font-weight:600;
 }
+
+/* =========================
+   PRICE
+========================= */
 
 .price{
     font-size:2.8rem;
@@ -330,6 +350,10 @@
     font-size:18px;
 }
 
+/* =========================
+   CALL BUTTON
+========================= */
+
 .call-btn{
     display:inline-block;
     margin-top:15px;
@@ -346,65 +370,105 @@
     background:#146c43;
 }
 
+/* =========================
+   WHATSAPP FLOATING BUTTON
+========================= */
 
-
-        
-.hero-title{
-    text-align:center;
-    padding:25px 15px 35px;
-    margin-bottom:30px;
-}
-
-.hero-badge{
-    display:inline-block;
-    background:#198754;
+.whatsapp-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#25D366;
     color:#fff;
-    padding:10px 20px;
-    border-radius:30px;
-    font-size:14px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin-bottom:20px;
+    text-decoration:none;
+    border-radius:50%;
+    box-shadow:0 6px 18px rgba(0,0,0,.35);
+    z-index:999999;
 }
+
+.whatsapp-btn i{
+    font-size:34px;
+}
+
+.whatsapp-btn:hover{
+    background:#1EBE5D;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
 
 .hero-title h1{
-    font-size:3rem;
-    font-weight:800;
-    color:#0f172a;
-    margin:10px 0;
-    line-height:1.2;
+    font-size:2rem;
 }
 
 .hero-subtitle{
-    font-size:1.3rem;
-    color:#198754;
-    font-weight:600;
-    margin-top:10px;
+    font-size:1rem;
+}
+
+.details-container,
+.property-info{
+    padding:20px;
+    margin:20px 15px;
 }
 
 .details-container h2{
-    text-align:center;
-    color:#0d6efd;
-    font-size:2rem;
-    margin-bottom:20px;
+    font-size:1.5rem;
 }
 
 .details-container p{
-    font-size:1.1rem;
-    line-height:1.8;
-    color:#555;
-    max-width:850px;
-    margin:auto;
-    text-align:center;
+    font-size:1rem;
 }
 
-        /* ..........h1.......... */
+.main-img{
+    width:100%;
+    margin:20px auto;
+}
 
+.gallery{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    justify-content:flex-start;
+    padding-bottom:10px;
+}
 
+.gallery img{
+    width:95px;
+    height:70px;
+    flex-shrink:0;
+}
 
-        
-    </style>
+.feature-grid{
+    grid-template-columns:1fr;
+}
+
+.price{
+    font-size:2.2rem;
+}
+
+.whatsapp-btn{
+    width:55px;
+    height:55px;
+    right:15px;
+    bottom:15px;
+}
+
+.whatsapp-btn i{
+    font-size:30px;
+}
+
+}
+
+</style>
+
+    
 </head>
 
 <body>
@@ -414,8 +478,8 @@
    rel="noopener noreferrer"
    class="whatsapp-btn"
    aria-label="Chat with us on WhatsApp">
-
-    <i class="fab fa-whatsapp"></i>
+  
+  <i class="fab fa-whatsapp"></i>
 
 </a>
 
