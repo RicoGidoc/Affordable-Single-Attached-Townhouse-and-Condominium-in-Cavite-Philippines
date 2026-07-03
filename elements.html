@@ -212,6 +212,51 @@
             padding-left: 18px;
         }
 
+/* ............. */
+.whatsapp-btn{
+    position:fixed;
+    right:max(15px, env(safe-area-inset-right));
+    bottom:max(15px, env(safe-area-inset-bottom));
+    width:58px;
+    height:58px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    box-shadow:0 6px 15px rgba(0,0,0,.35);
+    z-index:999999;
+}
+
+.whatsapp-btn i{
+    font-size:34px;
+}
+.whatsapp-btn:hover{
+    background:#1EBE5D;
+}
+
+@media (max-width:768px){
+
+.whatsapp-btn{
+    width:58px;
+    height:58px;
+    right:15px;
+    bottom:15px;
+}
+
+.whatsapp-btn i{
+    font-size:32px;
+}
+
+}
+/* ............... */
+
+
+
+        
+
         @media (max-width:768px) {
 
             .details-container {
