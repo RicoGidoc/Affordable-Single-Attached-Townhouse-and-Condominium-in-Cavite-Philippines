@@ -196,34 +196,51 @@ h1 {
 }
 
 
+/* =========================
    WHATSAPP FLOATING BUTTON
 ========================= */
 
-.whatsapp-btn{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    width:58px;
-    height:58px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#25D366;
-    color:#fff;
-    text-decoration:none;
-    border-radius:50%;
-    box-shadow:0 6px 18px rgba(0,0,0,.35);
-    z-index:999999;
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    text-decoration: none;
+    z-index: 99999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.whatsapp-btn i{
-    font-size:34px;
+.whatsapp-btn i {
+    font-size: 34px;
 }
 
-.whatsapp-btn:hover{
-    background:#1EBE5D;
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.1);
 }
 
+@media (max-width:768px){
+
+    .whatsapp-btn {
+        width:55px;
+        height:55px;
+        right:15px;
+        bottom:15px;
+    }
+
+    .whatsapp-btn i {
+        font-size:30px;
+    }
+
+}
 /* =========================
 
 @media (max-width: 768px) {
@@ -239,17 +256,6 @@ h1 {
     .gallery-item img {
         height: 220px;
     }
-
-    .whatsapp-btn{
-    width:55px;
-    height:55px;
-    right:15px;
-    bottom:15px;
-}
-
-.whatsapp-btn i{
-    font-size:30px;
-}
 
 }
     </style>
