@@ -333,11 +333,10 @@
       padding: 25px;
   }
 
-  .agent-content h3 {
-      color: black;
-      font-size: 28px;
-      margin-bottom: 10px;
-  }
+.agent-content h3 {
+    color: #111827 !important;
+    font-weight: 700;
+}
 
   .agent-role {
       color: #0ea5e9;
