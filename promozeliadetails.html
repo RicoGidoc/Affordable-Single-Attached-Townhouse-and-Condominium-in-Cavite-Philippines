@@ -48,7 +48,7 @@
 
     <meta
         property="og:description"
-        content="Explore the Zelia Single Attached House in Tanza, Cavite. 72 sqm lot, 112.5 sqm floor area, 3 bedrooms plus den, 2 toilet and bath, carport and balcony."
+        content="Zelia Single Attached House and Lot for Sale in Tanza, Cavite. 72 sqm lot, 112.5 sqm floor area, 3 bedrooms plus den, 2 toilet and bath, carport and balcony."
     >
 
     <meta
@@ -173,22 +173,17 @@
         }
 
 
-        /* =========================
-           CONTAINER
-        ========================== */
+        /* Container */
 
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: auto;
             background: #fff;
             padding: 20px;
-            border-radius: 10px;
         }
 
 
-        /* =========================
-           BACK BUTTON
-        ========================== */
+        /* Back Button */
 
         .home-btn {
             display: inline-block;
@@ -207,60 +202,19 @@
         }
 
 
-        /* =========================
-           MAIN IMAGE
-        ========================== */
+        /* Images */
 
         .main-img {
             width: 100%;
             max-width: 700px;
             height: auto;
-            max-height: 550px;
-            object-fit: contain;
             border-radius: 10px;
             display: block;
             margin: 15px auto;
-            background: #f1f1f1;
         }
 
 
-        /* =========================
-           SMALL THUMBNAILS
-        ========================== */
-
-        .gallery {
-            display: flex;
-            gap: 6px;
-            overflow-x: auto;
-            margin-top: 10px;
-            padding: 5px 0 12px;
-            scrollbar-width: thin;
-        }
-
-        .gallery img {
-            width: 90px;
-            height: 70px;
-            object-fit: cover;
-            border-radius: 5px;
-            flex: 0 0 auto;
-            cursor: pointer;
-            border: 2px solid transparent;
-            transition: all 0.2s ease;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.04);
-            border-color: green;
-        }
-
-        .gallery img.active {
-            border-color: green;
-        }
-
-
-        /* =========================
-           TEXT
-        ========================== */
+        /* Text */
 
         h1 {
             margin-top: 10px;
@@ -277,7 +231,8 @@
             margin-top: 20px;
         }
 
-        p {
+        p,
+        li {
             line-height: 1.7;
         }
 
@@ -285,15 +240,8 @@
             padding-left: 20px;
         }
 
-        li {
-            margin-bottom: 7px;
-            line-height: 1.7;
-        }
 
-
-        /* =========================
-           PROMO
-        ========================== */
+        /* Promo Box */
 
         .promo-box {
             background: #f7fff7;
@@ -304,21 +252,17 @@
         }
 
 
-        /* =========================
-           CONTACT BOX
-        ========================== */
+        /* Contact */
 
         .contact-box {
-            background: #f5f5f5;
-            padding: 18px;
-            border-radius: 8px;
             margin-top: 20px;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
         }
 
 
-        /* =========================
-           WHATSAPP BUTTON
-        ========================== */
+        /* WhatsApp Floating Button */
 
         .chat-btn {
             position: fixed;
@@ -346,16 +290,12 @@
         }
 
 
-        /* =========================
-           MOBILE
-        ========================== */
+        /* Mobile */
 
         @media (max-width: 768px) {
 
             .container {
-                margin: 0;
                 padding: 15px;
-                border-radius: 0;
             }
 
             h1 {
@@ -383,9 +323,8 @@
                 text-align: center;
             }
 
-            .gallery img {
-                width: 80px;
-                height: 62px;
+            .main-img {
+                width: 100%;
             }
 
             .chat-btn {
@@ -394,6 +333,7 @@
                 padding: 12px 18px;
                 font-size: 14px;
             }
+
         }
 
     </style>
@@ -411,7 +351,7 @@
     <a
         href="https://api.whatsapp.com/send?phone=639391209602&text=Hello%20I%20am%20interested%20in%20the%20Zelia%20Single%20Attached%20House%20in%20Tanza%2C%20Cavite.%20Please%20send%20me%20more%20details.%20Thank%20you!"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
         class="chat-btn"
     >
         💬 WhatsApp Us
@@ -419,22 +359,16 @@
 
 
     <!-- =========================
-         MAIN CONTAINER
+         CONTENT
     ========================== -->
 
     <div class="container">
 
 
-        <!-- BACK BUTTON -->
-
         <a href="promo.html" class="home-btn">
             🏠 Back
         </a>
 
-
-        <!-- =========================
-             TITLE
-        ========================== -->
 
         <h1>
             Zelia Single Attached House and Lot for Sale in Tanza, Cavite
@@ -442,11 +376,10 @@
 
 
         <!-- =========================
-             MAIN IMAGE
+             ORIGINAL IMAGE 1
         ========================== -->
 
         <img
-            id="mainImage"
             src="zelia/l14.png"
             class="main-img"
             alt="Zelia House Living Area and Interior Design"
@@ -455,49 +388,51 @@
 
 
         <!-- =========================
-             ORIGINAL ZELIA IMAGES
-             AS SMALL THUMBNAILS
+             ORIGINAL IMAGE 2
         ========================== -->
 
-        <div class="gallery">
+        <img
+            src="zelia/l16.png"
+            class="main-img"
+            alt="Zelia House Modern Interior Features"
+            loading="lazy"
+        >
 
-            <img
-                src="zelia/l14.png"
-                alt="Zelia House Living Area and Interior Design"
-                class="active"
-                onclick="changeImage(this)"
-                loading="lazy"
-            >
 
-            <img
-                src="zelia/l16.png"
-                alt="Zelia House Modern Interior Features"
-                onclick="changeImage(this)"
-                loading="lazy"
-            >
+        <!-- =========================
+             ORIGINAL IMAGE 3
+        ========================== -->
 
-            <img
-                src="zelia/l2.png"
-                alt="Zelia Single Attached House Floor Plan"
-                onclick="changeImage(this)"
-                loading="lazy"
-            >
+        <img
+            src="zelia/l2.png"
+            class="main-img"
+            alt="Zelia Single Attached House Floor Plan"
+            loading="lazy"
+        >
 
-            <img
-                src="zelia/l4.png"
-                alt="Zelia House Bedroom Design"
-                onclick="changeImage(this)"
-                loading="lazy"
-            >
 
-            <img
-                src="zelia/l5.png"
-                alt="Zelia House Property Features and Amenities"
-                onclick="changeImage(this)"
-                loading="lazy"
-            >
+        <!-- =========================
+             ORIGINAL IMAGE 4
+        ========================== -->
 
-        </div>
+        <img
+            src="zelia/l4.png"
+            class="main-img"
+            alt="Zelia House Bedroom Design"
+            loading="lazy"
+        >
+
+
+        <!-- =========================
+             ORIGINAL IMAGE 5
+        ========================== -->
+
+        <img
+            src="zelia/l5.png"
+            class="main-img"
+            alt="Zelia House Property Features and Amenities"
+            loading="lazy"
+        >
 
 
         <!-- =========================
@@ -594,7 +529,7 @@
             Most properties under the promo page
             usually include:
 
-            <br><br>
+            <br>
 
             💰 Up to 10% Discount on Total Contract
             Price (TCP)
@@ -627,7 +562,9 @@
         </p>
 
 
-        <!-- CONTACT -->
+        <!-- =========================
+             CONTACT
+        ========================== -->
 
         <div class="contact-box">
 
@@ -669,38 +606,6 @@
 
 
     </div>
-
-
-    <!-- =========================
-         THUMBNAIL SCRIPT
-    ========================== -->
-
-    <script>
-
-        function changeImage(thumbnail) {
-
-            const mainImage =
-                document.getElementById("mainImage");
-
-            mainImage.src = thumbnail.src;
-
-            mainImage.alt = thumbnail.alt;
-
-
-            document
-                .querySelectorAll(".gallery img")
-                .forEach(function(img) {
-
-                    img.classList.remove("active");
-
-                });
-
-
-            thumbnail.classList.add("active");
-
-        }
-
-    </script>
 
 
 </body>
