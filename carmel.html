@@ -82,35 +82,35 @@ href="https://ricogidoc.github.io/Affordable-Single-Attached-Townhouse-and-Condo
     }
 
     /* Main Layout */
-    .main-content {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        align-items: flex-start;
-    }
 
-   .main-img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    display: block;
-    margin: auto;
+ .main-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+    gap: 30px;
+    align-items: start;
 }
 
-    .main-text {
-        flex: 1;
-        font-size: 15px;
-        line-height: 1.6;
-    }
+ .main-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+   .main-text {
+    width: 100%;
+    min-width: 0;
+}
 
     /* Gallery FIXED */
-    .liora-gallery {
-        display: flex;
-        gap: 10px;
-        overflow-x: auto;
-        margin-top: 15px;
-        padding-bottom: 10px;
-    }
+  .liora-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    margin-top: 20px;
+}
 
     .liora-gallery img {
         height: 100px;
@@ -167,6 +167,35 @@ href="https://ricogidoc.github.io/Affordable-Single-Attached-Townhouse-and-Condo
 
 /* Mobile */
 @media (max-width: 768px) {
+
+    .main-content {
+        display: block;
+    }
+
+    .main-img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-text {
+        width: 100%;
+    }
+
+    .liora-gallery {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 6px;
+        width: 100%;
+    }
+
+}
+
+
+
+ 
+/* @media (max-width: 768px) {
     .chat-btn {
         bottom: 15px;
         right: 15px;
@@ -188,7 +217,7 @@ href="https://ricogidoc.github.io/Affordable-Single-Attached-Townhouse-and-Condo
         object-fit: cover;
     }
 
-}
+} */
 </style>
 
  <meta name="twitter:image:alt"
